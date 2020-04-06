@@ -7,37 +7,37 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="The foundation is based in Montgomery County, MD and their philanthropic efforts touch communities on a national scale."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>The Blair Family Foundation</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      function isIE() {
+        ua = navigator.userAgent;
+        /* MSIE used to detect old browsers and Trident used to newer ones*/
+        var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+          return is_ie; 
+      }
+      /* Create an alert to show if the browser is IE or not */
+      if (isIE()){
+          alert('Looks like you are using the ancient, unsupported, and unsafe Internet Explorer! No worries, just install a modern web browser like Chrome or email help@minute.tech and we will step you through it.');
+      } 
+    </script>
+    <noscript>
+      Uh oh, looks like JavaScript isn't enabled. This is rare, so you get
+      special treatment. Email doug@minute.tech and he can help. (hint: he's the
+      founder of Minute.tech)
+    </noscript>
+    <!--[if IE]>
+      Looks like you are using the ancient, unsupported Internet Explorer! 
+      No worries, just install a modern web browser like Chrome, Firefox, or Safari. 
+      If you can't figure out how to do that, email help@minute.tech and we will step you through it!
+    <![endif]-->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
