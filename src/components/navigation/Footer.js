@@ -12,7 +12,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <div style={{textAlign: "center"}}>
+                <div style={{textAlign: "center", padding: "0 0 25px 0"}}>
                     &copy;
                     {' '}
                     {this.state.year}

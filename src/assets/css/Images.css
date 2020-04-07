@@ -1,0 +1,117 @@
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Imagine sizing */
+img.xsmall {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    padding: 5px;
+}
+
+img.small {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+img.medium {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    padding: 5px;
+}
+
+img.large {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    padding: 5px;
+}
+
+img.xlarge {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding: 5px;
+}
+
+/* em styling */
+img.xs-em {
+    height: 0.75em;
+}
+img.s-em {
+    height: 1em;
+}
+
+img.m-em {
+    height: 1.25em;
+}
+
+img.l-em {
+    height: 1.75em;
+}
+
+img.xl-em {
+    height: 2em;
+}
+
+/* Misc */
+img.rounded {
+    border-radius: 50%;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
+
+    /* Add the blur effect */
+    filter: opacity(.7);
+    -webkit-filter: opacity(.7);
+    
+    /* Full height */
+    height: 700px; 
+    
+    /* Center and scale the image nicely */
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(156, 118, 118); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.8); /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+  }
+
+  @media(max-width: 900px) {
+    .bg-text {
+        width: 90%;
+        top: 25%;
+      }
+
+    .bg-image { 
+        /* Full height */
+        height: 400px; 
+        
+        /* Center and scale the image nicely */
+        background-position: 50% 25%;
+    }
+  }
+
+  .middle-logo {
+    width: 100%;
+    height: auto;
+    max-width: 125px;
+  }
