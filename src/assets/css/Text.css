@@ -1,3 +1,45 @@
+/*//*/ /*/ Colors /*/ /*//*/
+/*/
+
+Blue: #4FBFE0
+Dark: #3B8FA8
+Light: #72CCE6
+Xlight: #B9E5F3
+xxlight: #DCF2F9
+
+Yellow: #FDBB30
+Dark: #BE8C24
+Light: #FDC959
+Xlight: #FEE4AC
+xxlight: #FFF1D6
+
+Pink: #F9BFBC
+Dark: #BB8F8D
+Light: #FBD9D7
+Xlight: #FEF2F2
+
+Red: #E3352B
+Dark: #AA2820
+Light: #EE8680
+Xlight: #F9D7D5
+
+Orange: #FF8533
+Dark: #B35026
+Light: #FFB685
+Xlight: #FFE7D6
+
+Green: #33CC00
+Dark: #269900
+Light: #8FC981
+Xlight: #D6F5CC
+
+Grey: #A1A1A1
+Dark: #6B6B6B
+Light: #D6D6D6
+
+Font: CormorantGaramond & PinyonScript
+
+/*//*//*//*//*//*//*//*/*/
 
 @font-face {
     font-family: "CormorantGaramond-Light";
@@ -29,26 +71,38 @@
     src: url(../fonts/Pinyon_Script/PinyonScript-Regular.ttf);
 }
 
+.cormorant-garamond-regular {
+    font-family: "CormorantGaramond-Regular" !important;
+}
+
+.cormorant-garamond-medium {
+    font-family: "CormorantGaramond-Medium" !important;
+}
+
 .cormorant-garamond-bold {
     font-family: "CormorantGaramond-Bold" !important;
+}
+
+.pinyon-script {
+    font-family: "PinyonScript-Regular" !important;
 }
 
 /* HTML Elements */
 h1 {
     font-size: 3em;
-    font-family: "PinyonScript-Regular";
+    font-family: "CormorantGaramond-Bold";
 }
 
 h2 {
-    font-size: 2em;
-    font-family: "PinyonScript-Regular";
+    font-size: 2.5em;
+    font-family: "CormorantGaramond-Bold";
 }
 
 h3 {
     font-size: 1.5em;
     padding: 0px !important;
     margin: 0px !important;
-    font-family: "PinyonScript-Regular";
+    font-family: "CormorantGaramond-Bold";
     word-wrap: break-word !important;
     white-space: normal !important;
 }
@@ -58,20 +112,19 @@ h3 {
         font-size: 2em;
     }
     h2 {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     h3 {
         font-size: 1em;
     }
-    
 }
 
 h4 {
-    font-family: "PinyonScript-Regular";
+    font-family: "CormorantGaramond-Bold";
 }
 
 h5 {
-    font-family: "PinyonScript-Regular";
+    font-family: "CormorantGaramond-Bold";
 }
 
 p {
@@ -92,11 +145,6 @@ li {
     font-family: "CormorantGaramond-Medium";
     line-height: 1.6;
     font-size: 16;
-}
-
-label {
-    display: block;
-    font-family: "CormorantGaramond-Bold";
 }
 
 div {
@@ -140,18 +188,133 @@ i {
     font-size: 24px;
 }
 
+/* Text color */
+.black {
+    color: black !important;
+}
+.white {
+    color: white !important;
+}
+
+.dark-grey {
+    color: #6B6B6B !important;
+}
+.grey {
+    color: #A1A1A1 !important;
+}
+.light-grey {
+    color: #D6D6D6 !important;
+}
+
+.dark-blue {
+    color: #B9E5F3 !important;
+}
+.blue {
+    color: #4FBFE0 !important;
+}
+.light-blue {
+    color: #72CCE6 !important;
+}
+
+.dark-yellow {
+    color: #BE8C24 !important;
+}
+.yellow {
+    color: #FDBB30 !important;
+}
+.light-yellow {
+    color: #FEE4AC !important;
+}
+
+.dark-pink{
+    color: #BB8F8D !important;
+}
+.pink {
+    color: #F9BFBC !important;
+}
+.light-pink{
+    color: #FBD9D7 !important;
+}
+
+.dark-red {
+    color: #AA2820 !important;
+}
+.red {
+    color: #FA3C57 !important;
+}
+.light-red {
+    color: #EE8680 !important;
+}
+
+.dark-orange {
+    color: #B35026 !important;
+}
+.orange {
+    color: #FF8533 !important;
+}
+.light-orange {
+    color: #FFB685 !important;
+}
+
+.dark-green {
+    color: #269900 !important;
+}
+.green {
+    color: #33CC00 !important;
+}
+.light-green {
+    color: #8FC981 !important;
+}
+.xlight-green {
+    color: #ADEB99 !important;
+}
+
+/* Text hover color */
+.text-hover:hover {
+    color: #4FBFE0  !important;
+    cursor: pointer;
+}
+
+.text-hover-danger:hover {
+    color: #E3352B  !important;
+    cursor: pointer;
+}
+
+.text-hover-green:hover {
+    color: #33CC00  !important;
+    cursor: pointer;
+}
+
+.text-hover-dark-green:hover {
+    color: #269900  !important;
+    cursor: pointer;
+}
+
+.text-hover-yellow:hover {
+    color: #FDBB30  !important;
+    cursor: pointer;
+}
+
+.text-hover-light-yellow:hover {
+    color: #FEE4AC  !important;
+    cursor: pointer;
+}
+
+.text-hover-pink:hover {
+    color: #FF81CC  !important;
+    cursor: pointer;
+}
+
 /* Misc */
 .center-text {
     text-align: center !important; 
 }
 
 .anchor {
+    font-size: 0;
     display: block;
-    padding-top: 100px;
-    margin-top: -100px;
-    cursor: auto;
-    font-family: "PinyonScript-Regular" !important;
-    font-size: 1.5em;
-    color: black !important;
-    /* font-size: 0; */
+    position: relative;
+    top: -100px;
+    visibility: hidden;
  }
+

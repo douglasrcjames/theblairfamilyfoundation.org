@@ -1,0 +1,102 @@
+label {
+    color: black; 
+    font-family: "CormorantGaramond-Bold";
+    font-size: 22px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: -6px;
+    opacity: 0.5;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+}
+
+input {
+    font-size: 18px;
+    font-family: "CormorantGaramond-Medium";
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 75%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    background: rgba(0,0,0,0);
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+textarea {
+    font-size: 16px;
+    font-family: "CormorantGaramond-Medium";
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    background: rgba(0,0,0,0);
+    opacity: 0.8;
+    transition: 0.2s ease;
+    resize: none;
+    overflow: hidden;
+}
+
+input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+textarea:focus {
+    height: 100px;
+    resize: auto;
+    outline: none;
+    opacity: 1;
+    overflow: auto;
+}
+
+textarea:valid{
+    height: 100px;
+}
+  
+/* active state */
+input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-size: 16px;
+  color: #B1B1B1;
+  opacity: 1;
+}
+
+textarea:focus ~ label, textarea:valid ~ label {
+    top: -25px;
+    font-size: 16px;
+    color: #B1B1B1;
+    opacity: 1;
+}
+
+button.send-btn {
+    color: #B1B1B1;
+    font-size: 25px;
+    font-family: "CormorantGaramond-Medium";
+    transition: 0.2s ease;
+    padding: 0;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    border-bottom: 1px solid black;
+}
+
+button.send-btn:hover {
+  background-color: #269900;
+  color: white;
+  padding: 5px 30px 5px 30px;
+  border: 1px solid #269900;
+  cursor: pointer;
+}

@@ -22,7 +22,7 @@ export default class Header extends Component {
     }
 
     render() {
-        const menuArray = ['About Us','Mission','Vision','Contact Us']
+        const menuArray = ['About Us', 'Partners' ,'Contact Us']
 
         const menuItems = menuArray.map((val,index)=>{
             return (
