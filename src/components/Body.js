@@ -4,6 +4,7 @@ import { firestore } from "../Fire.js";
 import { store } from 'react-notifications-component';
 import * as yup from 'yup'
 import { Formik, Field } from 'formik';
+import Partners from './Partners.js';
 
 const formSchema = yup.object().shape({
     email: yup
@@ -67,22 +68,24 @@ export default class Body extends Component {
     render() {
         return (
             <>
-            <div class="bg-image"></div>
-            <div class="bg-text">
-                <img
-                    className="responsive middle-logo"
-                    alt="family"
-                    src={require("../assets/images/logo-square.png")} />
-                    <br/>
-                {/* <h1 style={{ fontSize: "50px" }} className="m-margin-b">
-                    <span className="cormorant-garamond-regular">The</span>
-                    <span className="pinyon-script"> David and Mikel Blair </span>
-                    <span className="cormorant-garamond-regular">Family Foundation</span> 
-                </h1> */}
+            <div className="bg-image-container">
+                <div class="bg-image"></div>
+                <div class="bg-text">
+                    {/* <img
+                        className="responsive middle-logo"
+                        alt="family"
+                        src={require("../assets/images/logo-square.png")} />
+                        <br/> */}
+                    {/* <h1 style={{ fontSize: "50px" }} className="m-margin-b">
+                        <span className="cormorant-garamond-regular">The</span>
+                        <span className="pinyon-script"> David and Mikel Blair </span>
+                        <span className="cormorant-garamond-regular">Family Foundation</span> 
+                    </h1> */}
 
-                <h1 style={{ fontSize: "50px" }} className="m-margin-b">Welcome to the Blair Family Foundation</h1>
+                    {/* <h1 className="bg-image-h1">Welcome to the Blair Family Foundation</h1> */}
+                </div>
             </div>
-
+            
             <div className="wrapper">  
                 <h2><a id="About Us" className="anchor" href="/#">About Us</a>About Us</h2>
                 <p>
@@ -102,147 +105,7 @@ export default class Body extends Component {
                 </p>
 
                 <h2><a id="Partners" className="anchor" href="/#">Partners</a>Partners</h2>
-                <Grid fluid>
-                    {/* Row 1 */}
-                    <Row center="xs">
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://www.ripkenfoundation.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive small"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Cal-Ripken.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://md.emergeamerica.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive medium"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Emerge.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://hispanicheritage.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive medium"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Hispanic-Heritage-Foundation.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://leadershipmontgomerymd.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive medium"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/LM.png')}
-                                    />
-                            </a>
-                        </Col>
-                    </Row>
-                    {/* Row 2 */}
-                    <Row center="xs">
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://wish.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive large"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Make-a-Wish.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://www.mcccmd.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive small"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/MCCC-Public-Safety-Awards.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://www.mcpf-md.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive large"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Moco-Police-Foundation.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://nourishnow.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive medium"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/Nourish-Now.png')}
-                                    />
-                            </a>
-                        </Col>
-                    </Row>
-                    {/* Row 3 */}
-                    <Row center="xs">
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://bbardc.org/project/thearc/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive small"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/THEARC.png')}
-                                    />
-                            </a>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="s-margin-b">
-                            <a 
-                                href="https://shadygrove.umd.edu/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >        
-                                <img
-                                    className="responsive medium"
-                                    alt="partner logo"
-                                    src={require('../assets/images/partner-logos/USG.png')}
-                                    />
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>    
+                <Partners />
 
                 <h2><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us</h2>
                 <Formik
