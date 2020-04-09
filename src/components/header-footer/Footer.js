@@ -11,6 +11,10 @@ export default class Footer extends Component {
 
     render() {
         return (
+            <>
+            <br/>
+            <hr/>
+            <br/>
             <footer>
                 <div style={{textAlign: "center", padding: "0 0 25px 0"}}>
                     &copy;
@@ -20,6 +24,7 @@ export default class Footer extends Component {
                     The Blair Family Foundation
                 </div>
             </footer>
+            </>
         )
     }
 }

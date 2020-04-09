@@ -318,6 +318,10 @@ i {
     visibility: hidden;
  }
 
+ .cursor-pointer {
+    cursor: pointer;
+}
+
 
 
 
