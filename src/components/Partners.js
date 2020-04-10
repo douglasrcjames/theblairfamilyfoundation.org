@@ -51,7 +51,7 @@ export default class Partners extends Component {
                                 </div>
                              ))}
                         </Slider>
-                        <h1 className="center-text dark-green">We are proud partners with {partners.length} great organizations</h1>
+                        <h2 className="center-text">We are proud to partner with so many dedicated organizations!</h2>
                         <Slider {...settings2}>
                             {this.state.partnersSecondHalf.map((partner, index) => (
                                 <div key={index} className="m-padding">
