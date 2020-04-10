@@ -1,43 +1,32 @@
 import React, { Component } from 'react'
 import Slider from "react-slick";
 
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-  }
-
 export default class Partners extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-            partners: []
+            partnersFirstHalf: [],
+            partnersSecondHalf: []
         }
     }
 
     componentDidMount(){
-        shuffle(partners);
+        let partnersArray = shuffle(partners);
+        let halfwayThrough = Math.floor(partnersArray.length / 2)
+        // or instead of floor you can use ceil depending on what side gets the extra data
+
+        let partnersFirstHalf = partnersArray.slice(0, halfwayThrough);
+        let partnersSecondHalf = partnersArray.slice(halfwayThrough, partnersArray.length);
+
         this.setState({
-            partners: partners,
+            partnersFirstHalf: partnersFirstHalf,
+            partnersSecondHalf: partnersSecondHalf
         });
     }
     
     render() {
-        if(!this.state.partners){
+        if(!this.state.partnersFirstHalf || !this.state.partnersSecondHalf){
             return(
                 <div className="center-text">Loading...</div>
             )
@@ -45,8 +34,26 @@ export default class Partners extends Component {
             return (
                 <div>
                     <div className="container">
-                        <Slider {...settings}>
-                            {this.state.partners.map((partner, index) => (
+                        <Slider {...settings1}>
+                            {this.state.partnersFirstHalf.map((partner, index) => (
+                                <div key={index} className="m-padding">
+                                     <a 
+                                        href={partner.webUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >        
+                                        <img
+                                            className={`responsive ${partner.picSize}`}
+                                            alt="partner logo"
+                                            src={partner.picPath}
+                                            />
+                                    </a>
+                                </div>
+                             ))}
+                        </Slider>
+                        <h1 className="center-text dark-green">We are proud partners with {partners.length} great organizations</h1>
+                        <Slider {...settings2}>
+                            {this.state.partnersSecondHalf.map((partner, index) => (
                                 <div key={index} className="m-padding">
                                      <a 
                                         href={partner.webUrl}
@@ -94,13 +101,15 @@ export default class Partners extends Component {
     }
 }
 
-const settings = {
+const settings1 = {
     dots: false,
     infinite: true,
     arrows: false,
     pauseOnHover: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    rtl: true,
+    initialSlide: 0,
     variableWidth: true,
     autoplay: true,
     speed: 5000,
@@ -128,6 +137,61 @@ const settings = {
         }
       ]
   };
+
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    pauseOnHover: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    variableWidth: true,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    swipeToSlide: true,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+  };
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
 
 const partners = [
     {
@@ -468,7 +532,7 @@ const partners = [
     {
         webUrl: `https://www.ushersyndromesociety.org/`,
         picPath: require("../assets/images/partner-logos/usher-syndrome.png"),
-        picSize: "large"
+        picSize: "medium"
     },
     {
         webUrl: `https://www.mlb.com/nationals/community/philanthropies`,
