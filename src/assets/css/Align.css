@@ -404,4 +404,21 @@ body {
     margin: 0 auto;
 }
 
+.box-text-v-align {
+    display: flex;
+    align-items:center;
+ }
+
+ /* Slick slider */
+ .slick-initialized .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+.slick-track {
+    padding: 0;
+}
+
+ 
   

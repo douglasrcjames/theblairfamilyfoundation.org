@@ -8,8 +8,8 @@ export default class Home extends Component {
         return (
             <>
             <div className="bg-image-container">
-                <div class="bg-image"></div>
-                <div class="bg-text">
+                <div className="bg-image"></div>
+                <div className="bg-text">
                     {/* <img
                         className="responsive middle-logo"
                         alt="family"
