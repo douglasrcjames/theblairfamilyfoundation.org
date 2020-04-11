@@ -18,11 +18,14 @@ export default class Press extends Component {
                 pdfUrl: `https://drive.google.com/file/d/1xso5DsQFsJ5xTuQd27XJBnVGDnGgsFSE`,
                 date: "April 8, 2020"
             },
-            // {
-            //     title: "Does the County Government Need More Revenue?",
-            //     pdfUrl: `https://drive.google.com/file/d/1SfIb7ZgVmp4Ik-WzQU2j64ro36p4rYO6`,
-            //     date: "April 2, 2020"
-            // },
+        ]
+
+        const tempExtArticles = [
+            {
+                title: "Upcounty Consolidation Hub for Community Needs Opens at BlackRock Center for the Arts",
+                pdfUrl: `https://drive.google.com/file/d/1sx1CDwwNio1mXpXvO9d41sIcmCRD_GYW`,
+                date: "April 8, 2020"
+            },
             // {
             //     title: "How Kirwan Benefits Montgomery County",
             //     pdfUrl: `https://drive.google.com/file/d/1H7YPFTLkAK5VS1VeUbSqI2yTAXyUxHya`,
@@ -31,10 +34,14 @@ export default class Press extends Component {
         ]
 
         const numArticles = tempArticles.length;
+        const numExtArticles = tempArticles.length;
         const tempShowArticleFlags = Array(numArticles).fill(false)
+        const tempShowExtArticleFlags = Array(numExtArticles).fill(false)
         this.setState({
             articles: tempArticles,
-            showArticleFlags: tempShowArticleFlags
+            extArticles: tempExtArticles,
+            showArticleFlags: tempShowArticleFlags,
+            showExtArticleFlags: tempShowExtArticleFlags
         })
     }
 
@@ -43,6 +50,13 @@ export default class Press extends Component {
         const newFlags = [...this.state.showArticleFlags];
         newFlags[index] = !newFlags[index];
         this.setState({ showArticleFlags: newFlags });
+    }
+
+    toggleExtArticle = (index) =>{
+        // Then set specific one to true
+        const newFlags = [...this.state.showExtArticleFlags];
+        newFlags[index] = !newFlags[index];
+        this.setState({ showExtArticleFlags: newFlags });
     }
     
     render() {
@@ -53,7 +67,7 @@ export default class Press extends Component {
             backgroundPosition: "50% 55%", // change me around to move up and down!
             backgroundSize: "cover"
           };
-        if(!this.state.articles){
+        if(!this.state.articles || !this.state.extArticles){
             return (
                 <div className="wrapper">
                     <h2>Loading...</h2>
@@ -85,6 +99,45 @@ export default class Press extends Component {
                                     </Col>
                                 </Row>
                                 <div className={this.state.showArticleFlags[index] ? "pdf-container" : "hide"}>
+                                    <iframe 
+                                        src={`${article.pdfUrl}/preview`} 
+                                        title={article.title}
+                                        frameBorder="0" 
+                                        height="800px" 
+                                        width="100%">
+                                        <p>
+                                            This PDF could not be displayed, please download or view it 
+                                            <a href={`${article.pdfUrl}`} >
+                                                here.
+                                            </a>
+                                        </p>
+                                    </iframe>
+                                </div>
+                            </div>
+                        ))}
+                    </Grid>
+
+                    <h2>External Media</h2>
+                    <Grid fluid>
+                        {this.state.extArticles.map((article, index) => (
+                            <div key={index}>
+                                <Row center="xs">
+                                    <Col xs={12} className="s-margin-b">
+                                        <h3>{article.title}</h3>
+                                        <b className="dark-grey">{article.date}</b>
+                                        <br/>
+                                        <span className="dark-green cursor-pointer bold" onClick={() => this.toggleExtArticle(index)}>
+                                            {!this.state.showExtArticleFlags[index] && (
+                                                <span><i className="fa fa-eye"></i> VIEW</span>
+                                            )}
+                                            {this.state.showExtArticleFlags[index] && (
+                                                <span><i className="fa fa-eye-slash"></i> CLOSE</span>
+                                            )}
+                                            
+                                        </span>
+                                    </Col>
+                                </Row>
+                                <div className={this.state.showExtArticleFlags[index] ? "pdf-container" : "hide"}>
                                     <iframe 
                                         src={`${article.pdfUrl}/preview`} 
                                         title={article.title}
