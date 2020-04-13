@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// TODO: remember to reactive me when working version is working
+function noop() {}
+if (process.env.NODE_ENV !== 'development') {
+  console.log = noop;
+  console.warn = noop;
+  console.error = noop;
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
