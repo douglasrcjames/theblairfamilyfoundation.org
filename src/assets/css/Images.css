@@ -38,6 +38,13 @@ img.xlarge {
     padding: 5px;
 }
 
+
+img.xxlarge {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
+
 /* em styling */
 img.xs-em {
     height: 0.75em;
@@ -64,69 +71,200 @@ img.rounded {
 }
 
 .bg-image-container {
-    /* height: 100%; width: 100%; margin: 0; */
+    position: relative;
+    text-align: center;
 }
 
 .bg-image {
     /* The image used */
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
-
-    /* Add the blur effect */
-    filter: opacity(.7);
-    -webkit-filter: opacity(.7);
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        rgba(75, 119, 190, .75), 
+        rgba(75, 119, 190, .75)
+    ),
+    /* bottom, image */
+    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/nature.png?alt=media&token=f2dc74ac-bb80-4847-9345-f47346f736de");
     
     /* Full height */
     height: 700px;
     
     /* Center and scale the image nicely */
-    background-position: 50% 25%;
+    background-position: 50% 35%;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+.bg-image-about {
+    /* The image used */
+    background:
+    /* bottom, image */
+    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
+    
+    /* Full height */
+    height: 400px;
+    
+    /* Center and scale the image nicely */
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-focus-1 {
+    /* The image used */
+    background:
+    /* bottom, image */
+    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
+    
+    /* Full height */
+    height: 200px;
+    
+    /* Center and scale the image nicely */
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-focus-2 {
+    /* The image used */
+    background:
+    /* bottom, image */
+    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
+    
+    /* Full height */
+    height: 200px;
+    
+    /* Center and scale the image nicely */
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image-focus-3 {
+    /* The image used */
+    background:
+    /* bottom, image */
+    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
+    
+    /* Full height */
+    height: 200px;
+    
+    /* Center and scale the image nicely */
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(156, 118, 118); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.8); /* Black w/opacity/see-through */
-    color: black;
-    font-weight: bold;
+/* Position text in the middle of the page/image */
+.bg-text {
+    color: white;
+    margin: 0;
     position: absolute;
-    top: 37.5%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 50%;
     text-align: center;
-  }
+}
 
-  .bg-image-h1 {
+.bg-image-h1 {
     font-size: 50px;
- }
+    margin: 0;
+}
+
+.bg-image-p {
+    font-size: 24px;
+}
 
    
 
-  @media(max-width: 900px) {
+@media(max-width: 900px) {
     .bg-text {
         width: 90%;
-        top: 25%;
-      }
+    }
 
-    .bg-image { 
-        /* Full height */
-        height: 400px; 
-        
-        /* Center and scale the image nicely */
-        background-position: 50% 25%;
+    .bg-image-p {
+        font-size: 16px;
     }
 
     .bg-image-h1 {
         margin: 0 0 1% 0;
         font-size: 30px;
-     }
-  }
+    }
+}
 
-  .middle-logo {
+.middle-logo {
     width: 100%;
     height: auto;
     max-width: 125px;
+}
+
+
+/* Focus boxes */
+
+.focus-container {
+    position: relative;
+}
+
+.focus-container img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+@media(max-width: 900px) {
+    .focus-container {
+        max-height: 200px;
+        overflow: hidden;
+    }
+}
+
+
+
+.focus-container .text {
+    transition: .2s ease;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-style: bold;
+    /* font-size: 4vw; */
+    font-size: 35px;
+    text-shadow: 3px 1.5px 1px black;
+}
+
+.focus-container .hover-text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    /* font-size: 1.5vw; */
+    font-size: 18px;
+}
+
+  
+  .focus-container:hover img {
+    opacity: 0.4;
   }
+  
+  .focus-container:hover .hover-text {
+    opacity: 1;
+  }
+
+  .focus-container:hover .text {
+    opacity: 0;
+  }
+
+  

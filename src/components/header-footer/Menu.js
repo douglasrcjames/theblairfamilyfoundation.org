@@ -7,13 +7,16 @@ export default class Menu extends Component {
           open: this.props.open ? this.props.open : false,
         }
       }
-        
-      componentWillReceiveProps(nextProps){
+
+      shouldComponentUpdate(nextProps){
         if(nextProps.open !== this.state.open){
           this.setState({open:nextProps.open});
+          return true;
+        } else {
+          return false;
         }
       }
-      
+
       render(){
         const styles={
           container: {

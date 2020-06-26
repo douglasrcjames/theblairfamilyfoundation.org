@@ -181,11 +181,11 @@ i {
 }
 
 .l-text {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .xl-text {
-    font-size: 24px;
+    font-size: 24px !important;
 }
 
 /* Text color */
@@ -320,6 +320,14 @@ i {
 
  .cursor-pointer {
     cursor: pointer;
+}
+
+.thick-font {
+    font-weight: 900;
+}
+
+.semi-thick-font {
+    font-weight: 500;
 }
 
 

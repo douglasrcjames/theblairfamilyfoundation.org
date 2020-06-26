@@ -24,7 +24,7 @@ export default class Header extends Component {
     }
 
     render() {
-        const menuArray = ['Press','About Us', 'Partners' ,'Contact Us']
+        const menuArray = ['Press', 'Our Focus', 'Partners', 'About Us', 'Contact Us']
 
         const menuItems = menuArray.map((val,index)=>{
             if(val === 'Press'){

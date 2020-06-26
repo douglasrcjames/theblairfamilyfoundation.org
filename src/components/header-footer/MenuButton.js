@@ -4,19 +4,22 @@ export default class MenuButton extends Component {
   constructor(props){
     super(props)
     this.state={
-      open: this.props.open? this.props.open:false,
-      color: this.props.color? this.props.color:'black',
+      open: this.props.open ? this.props.open : false,
+      color: this.props.color ? this.props.color : 'black',
     }
   }
 
-  componentWillReceiveProps(nextProps){
+  shouldComponentUpdate(nextProps){
     if(nextProps.open !== this.state.open){
       this.setState({open:nextProps.open});
+      return true
+    } else {
+      return false
     }
   }
   
   handleClick(){
-  this.setState({open:!this.state.open});
+    this.setState({open:!this.state.open});
   }
   
   render(){

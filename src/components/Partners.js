@@ -33,7 +33,7 @@ export default class Partners extends Component {
         } else {
             return (
                 <div>
-                    <div className="container">
+                    <div className="m-margin-b">
                         <Slider {...settings1}>
                             {this.state.partnersFirstHalf.map((partner, index) => (
                                 <div key={index} className="m-padding">
