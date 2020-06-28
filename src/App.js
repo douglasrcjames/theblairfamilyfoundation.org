@@ -15,7 +15,7 @@ import './assets/css/Align.css'
 import './assets/css/Forms.css'
 import './assets/css/PDF.css'
 import './assets/css/Animations.css'
-import './assets/css/Misc.css'
+
 function App() {
   return (
     <BrowserRouter>
