@@ -22,7 +22,7 @@ const formSchema = yup.object().shape({
       .string()
       .required("A message body is required.")
       .max(30000,"Body must be at most 30000 characters long.")
-      .min(30,"Body must be at least 10 characters long."),
+      .min(10,"Body must be at least 10 characters long."),
 })
 
 const initialFormState = {
