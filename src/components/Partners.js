@@ -485,6 +485,11 @@ const partners = [
         picSize: "medium"
     },
     {
+        webUrl: `http://www.rainbowplace.org/`,
+        picPath: require("../assets/images/partner-logos/RainbowPlace.png"),
+        picSize: "medium"
+    },
+    {
         webUrl: `https://www.sierraclub.org/maryland`,
         picPath: require("../assets/images/partner-logos/Sierra-club.png"),
         picSize: "medium"
