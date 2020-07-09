@@ -24,7 +24,7 @@ export default class Home extends Component {
 
             <div>
                 <div className="center-text">
-                    <h1 ><a id="Our Focus" className="anchor" href="/#">Our Focus</a>Our Focus</h1>
+                    <h1><a id="Our Focus" className="anchor" href="/#">Our Focus</a>Our Focus</h1>
                     <p className="l-text">We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County.</p>
                 </div>
                 <Grid fluid className="no-padding">
@@ -36,6 +36,7 @@ export default class Home extends Component {
                                 Education
                             </div>
                             <div className="hover-text">
+                                <h2 className="no-margin">Education</h2>
                                 We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.
                                 <br/>
                                 <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
@@ -47,6 +48,7 @@ export default class Home extends Component {
                                 Equality
                             </div>
                             <div className="hover-text">
+                                <h2 className="no-margin">Equality</h2>
                                 The foundation is focused on bringing balance for under served minority groups in the county.
                                 <br/>
                                 <Link to="/focus/equality"><button className="button-white" type="button">Learn more</button></Link>
@@ -58,6 +60,7 @@ export default class Home extends Component {
                                 Environment
                             </div>
                             <div className="hover-text">
+                                <h2 className="no-margin">Environment</h2>
                                 We are working with the community and policy makers to leave a healthy earth for future generations.
                                 <br/>
                                 <Link to="/focus/environment"><button className="button-white" type="button">Learn more</button></Link>

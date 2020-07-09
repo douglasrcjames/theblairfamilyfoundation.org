@@ -165,6 +165,7 @@ img.rounded {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+    text-shadow: 0 0 6px black !important;
 }
 
 .bg-image-h1 {
@@ -235,7 +236,7 @@ img.rounded {
     text-align: center;
     font-style: bold;
     /* font-size: 4vw; */
-    font-size: 35px;
+    font-size: 3rem;
     text-shadow: 3px 1.5px 1px black;
 }
 
@@ -256,7 +257,7 @@ img.rounded {
 
   
   .focus-container:hover img {
-    opacity: 0.4;
+    opacity: 0.1;
   }
   
   .focus-container:hover .hover-text {
