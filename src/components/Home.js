@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
 import Partners from './Partners.js';
 import ContactUs from './ContactUs.js';
+import SubscribeForm from './misc/SubscribeForm.js';
 
 export default class Home extends Component {
     render() {
@@ -74,7 +75,7 @@ export default class Home extends Component {
             <Partners />
 
             <div className="wrapper">  
-                <div className="full-width ">
+                <div className="full-width">
                     <div className="wrapper white semi-thick-font">
                         <h1 className="center-text"><a id="About Us" className="anchor" href="/#">About Us</a>About Us</h1>
                         <p>
@@ -104,7 +105,14 @@ export default class Home extends Component {
 
                 <h1 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us</h1>
                 <ContactUs />
-               
+                <div className="wrapper">  
+                    <div className="full-width">
+                        <div className="wrapper m-padding-b">
+                            <h2 className="center-text">Get our newsletter and updates</h2>
+                            <SubscribeForm />
+                        </div>
+                    </div>
+                </div>
             </div>
             </>
         )
