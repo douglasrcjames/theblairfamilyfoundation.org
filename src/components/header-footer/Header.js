@@ -56,7 +56,7 @@ export default class Header extends Component {
                                 <img
                                     className="responsive logo"
                                     alt="family"
-                                    src={require("../../assets/images/logo.png")} />
+                                    src={require("../../assets/images/logo/v2.png")} />
                             </Link>
                         </div>
                     

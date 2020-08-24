@@ -15,7 +15,7 @@ label {
 
 input {
     font-size: 18px;
-    font-family: "CormorantGaramond-Medium";
+    font-family: "FuturaBook";
     height: 25px;
     padding: 10px 10px 10px 5px;
     
@@ -47,7 +47,7 @@ input.white:focus {
 
 textarea {
     font-size: 16px;
-    font-family: "CormorantGaramond-Medium";
+    font-family: "FuturaBook";
     height: 25px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -98,7 +98,7 @@ textarea:focus ~ label, textarea:valid ~ label {
 button.send-btn {
     color: #B1B1B1;
     font-size: 25px;
-    font-family: "CormorantGaramond-Medium";
+    font-family: "FuturaBook";
     transition: 0.2s ease;
     padding: 0;
     background: none;
@@ -120,7 +120,7 @@ button.send-btn:hover {
 button.subscribe-btn {
     color: #B1B1B1;
     font-size: 25px;
-    font-family: "CormorantGaramond-Medium";
+    font-family: "FuturaBook";
     transition: 0.2s ease;
     padding: 0;
     background: none;
@@ -183,13 +183,13 @@ button.subscribe-btn:hover {
 .button-white:hover:before, .button-white:hover:after {
     width: calc(100% + 12px);
     height: calc(100% + 12px);
-    border-color: #fff
+    border-color: #717C7D
 }
 
 .button-white:hover {
-    color :#353535;
-    background-color: #fff;
-    border-color: #fff
+    color :#fff;
+    background-color: #717C7D;
+    border-color: #717C7D
 }
 
 .panel {

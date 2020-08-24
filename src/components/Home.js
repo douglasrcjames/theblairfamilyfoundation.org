@@ -10,66 +10,111 @@ export default class Home extends Component {
         return (
             <>
             <div className="bg-image-container">
-                <div className="bg-image tint t-2"></div>
-                <div className="bg-text">
+                <div className="bg-image"></div>
+                <div className="bg-content">
                     <img
                         className="responsive middle-logo"
-                        alt="family"
-                        src={require("../assets/images/square-logo-white.png")} />
+                        style={{margin: "-50px 0px 0px 0px"}}
+                        alt="creek"
+                        src={require("../assets/images/logo/b-w-border.png")} />
                     <br/>
-
-                    <h1 className="bg-image-h1">Committed to Montgomery County</h1>
-                    <p className="bg-image-p">Working with partners and communities across the county to address long-term quality of life challenges and opportunities.</p>
+                    <div className="bg-text-box">
+                        <h1 className="bg-h1">Committed to Montgomery County</h1>
+                        <div className="m-width center">
+                            <p className="bg-p">Working with partners and communities across the county to address long-term quality of life challenges and opportunities.</p>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
-            <div>
-                <div className="center-text">
-                    <h1><a id="Our Focus" className="anchor" href="/#">Our Focus</a>Our Focus</h1>
-                    <p className="l-text">We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County.</p>
-                </div>
-                <Grid fluid className="no-padding">
-                {/* Row 1 */}
-                    <Row>
-                        <Col sm={12} lg={4} className="s-margin-t-b focus-container">
-                            <img src={require("../assets/images/education.jpg")} className="responsive" alt="focus 1"/>
-                            <div className="text">
-                                Education
-                            </div>
-                            <div className="hover-text">
-                                <h2 className="no-margin">Education</h2>
-                                We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.
-                                <br/>
-                                <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
-                            </div>
-                        </Col>
-                        <Col sm={12} lg={4} className="s-margin-t-b focus-container">
-                            <img src={require("../assets/images/equality.jpg")} className="responsive" alt="focus 1"/>
-                            <div className="text">
-                                Equality
-                            </div>
-                            <div className="hover-text">
-                                <h2 className="no-margin">Equality</h2>
-                                The foundation is focused on bringing balance for under served minority groups in the county.
-                                <br/>
-                                <Link to="/focus/equality"><button className="button-white" type="button">Learn more</button></Link>
-                            </div>
-                        </Col>
-                        <Col sm={12} lg={4} className="s-margin-t-b focus-container">
-                            <img src={require("../assets/images/environment.jpg")} className="responsive" alt="focus 1"/>
-                            <div className="text">
-                                Environment
-                            </div>
-                            <div className="hover-text">
-                                <h2 className="no-margin">Environment</h2>
-                                We are working with the community and policy makers to leave a healthy earth for future generations.
-                                <br/>
-                                <Link to="/focus/environment"><button className="button-white" type="button">Learn more</button></Link>
-                            </div>
-                        </Col>
-                    </Row>
-                </Grid>
-            </div>
+            <Grid className="full-width bg-light-grey">
+                <Row className="l-container">
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <h1>Our Story</h1>
+                        <p>
+                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
+                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
+                            when they are given access to opportunity.
+                        </p>
+                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                    </Col>
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <img src={require("../assets/images/family.jpg")} className="responsive xxlarge" alt="family" style={{ border: "2px solid #71a75d" }} />
+                    </Col>
+                </Row>
+            </Grid>
+            <Grid fluid>
+                <Row className="l-container">
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <img src={require("../assets/images/nature.png")} className="responsive xxlarge m-padding" alt="family"/>
+                    </Col>
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <h1>Our Focus</h1>
+                        <p>
+                            We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
+                            We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
+                            We use creative philanthropy to maximize our impact.
+                        </p>
+                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                    </Col>
+                </Row>
+            </Grid>
+            <Grid fluid className="no-padding">
+                <Row>
+                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
+                        <img src={require("../assets/images/focus/education.jpg")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Education</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2 className="no-margin">Education</h2>
+                            <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
+                            <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                        </div>
+                    </Col>
+                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
+                        <img src={require("../assets/images/focus/equality.jpg")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Equality</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2 className="no-margin">Equality</h2>
+                            <p>The foundation is focused on bringing balance for under served minority groups in the county.</p>
+                            <Link to="/focus/equality"><button className="button-white" type="button">Learn more</button></Link>
+                        </div>
+                    </Col>
+                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
+                        <img src={require("../assets/images/focus/environment.jpg")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Environment</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2 className="no-margin">Environment</h2>
+                            <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
+                            <Link to="/focus/environment"><button className="button-white" type="button">Learn more</button></Link>
+                        </div>
+                    </Col>
+                </Row>
+            </Grid>
+
+            <Grid fluid>
+                <Row fluid className="l-container">
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge m-padding" alt="family"/>
+                    </Col>
+                    <Col sm={12} lg={6} className="s-margin-t-b">
+                        <h1>Racial Equality</h1>
+                        <p>
+                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
+                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
+                            when they are given access to opportunity.
+                        </p>
+                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                    </Col>
+                </Row>
+            </Grid>
 
             <h1><a id="Partners" className="anchor" href="/#">Partners</a></h1>
             <Partners />
