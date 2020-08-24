@@ -141,6 +141,7 @@ button.subscribe-btn:hover {
 
 .button-white {
     color: #454545;
+    font-family: "CormorantGaramond-Regular";
     background: transparent;
     border-width: 2px;
     border-style: solid;
@@ -153,6 +154,7 @@ button.subscribe-btn:hover {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .button-white:before, .button-white:after {

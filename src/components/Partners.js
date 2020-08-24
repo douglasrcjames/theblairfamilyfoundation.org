@@ -2,98 +2,31 @@ import React, { Component } from 'react'
 import Slider from "react-slick";
 
 export default class Partners extends Component {
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-            partnersFirstHalf: [],
-            partnersSecondHalf: []
-        }
-    }
-
-    componentDidMount(){
-        let partnersArray = shuffle(partners);
-        let halfwayThrough = Math.floor(partnersArray.length / 2)
-        // or instead of floor you can use ceil depending on what side gets the extra data
-
-        let partnersFirstHalf = partnersArray.slice(0, halfwayThrough);
-        let partnersSecondHalf = partnersArray.slice(halfwayThrough, partnersArray.length);
-
-        this.setState({
-            partnersFirstHalf: partnersFirstHalf,
-            partnersSecondHalf: partnersSecondHalf
-        });
-    }
-    
     render() {
-        if(!this.state.partnersFirstHalf || !this.state.partnersSecondHalf){
+        if(!partners){
             return(
                 <div className="center-text">Loading...</div>
             )
         } else {
             return (
-                <div>
-                    <div className="m-margin-b">
-                        <Slider {...settings1}>
-                            {this.state.partnersFirstHalf.map((partner, index) => (
-                                <div key={index} className="m-padding">
-                                     <a 
-                                        href={partner.webUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >        
-                                        <img
-                                            className={`responsive ${partner.picSize}`}
-                                            alt="partner logo"
-                                            src={partner.picPath}
-                                            />
-                                    </a>
-                                </div>
-                             ))}
-                        </Slider>
-                        <h2 className="center-text">We are proud to partner with so many dedicated organizations!</h2>
-                        <Slider {...settings2}>
-                            {this.state.partnersSecondHalf.map((partner, index) => (
-                                <div key={index} className="m-padding">
-                                     <a 
-                                        href={partner.webUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >        
-                                        <img
-                                            className={`responsive ${partner.picSize}`}
-                                            alt="partner logo"
-                                            src={partner.picPath}
-                                            />
-                                    </a>
-                                </div>
-                             ))}
-                        </Slider>
-                        {/* {partners.length} */}
-                    </div>
-    
-                    {/* <Grid fluid>
-                        <Row center="xs" className="box-text-v-align">
-                           
-                                {partners.map((partner, index) => (
-                                    // Odd rows 4 columns, Even rows 3 columns. (backwards from what you would think lol)
-                                    <Col xs={12} sm={6} lg={3} className="s-margin-b" key={index}>
-                                            <a 
-                                                href={partner.webUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                >        
-                                                <img
-                                                    className={`responsive ${partner.picSize}`}
-                                                    alt="partner logo"
-                                                    src={partner.picPath}
-                                                    />
-                                            </a>
-                                    </Col>
-                                ))}
-                            
-                        </Row>
-                    </Grid> */}
+                <div className="m-margin-b">
+                    <Slider {...settings1}>
+                        {shuffle(partners).map((partner, index) => (
+                            <div key={index} className="m-padding">
+                                    <a 
+                                    href={partner.webUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >        
+                                    <img
+                                        className={`responsive ${partner.picSize}`}
+                                        alt="partner logo"
+                                        src={partner.picPath}
+                                        />
+                                </a>
+                            </div>
+                            ))}
+                    </Slider>
                 </div>
             )
         }
@@ -138,41 +71,6 @@ const settings1 = {
       ]
   };
 
-  const settings2 = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    pauseOnHover: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    variableWidth: true,
-    autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    swipeToSlide: true,
-    responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-  };
 
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;

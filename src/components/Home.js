@@ -29,7 +29,7 @@ export default class Home extends Component {
                 </div>
             </div>
 
-            <Grid className="full-width bg-light-grey">
+            <Grid fluid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story</h1>
@@ -41,7 +41,7 @@ export default class Home extends Component {
                         <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
                     </Col>
                     <Col sm={12} lg={6} className="s-margin-t-b">
-                        <img src={require("../assets/images/family.jpg")} className="responsive xxlarge" alt="family" style={{ border: "2px solid #71a75d" }} />
+                        <img src={require("../assets/images/family.jpg")} className="responsive xxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
@@ -61,7 +61,7 @@ export default class Home extends Component {
                     </Col>
                 </Row>
             </Grid>
-            <Grid fluid className="no-padding">
+            <Grid fluid className="no-padding s-margin-b">
                 <Row>
                     <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
                         <img src={require("../assets/images/focus/education.jpg")} className="responsive" alt="focus 1"/>
@@ -99,8 +99,8 @@ export default class Home extends Component {
                 </Row>
             </Grid>
 
-            <Grid fluid>
-                <Row fluid className="l-container">
+            <Grid fluid className="full-width bg-light-grey">
+                <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b">
                         <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge m-padding" alt="family"/>
                     </Col>
@@ -111,19 +111,80 @@ export default class Home extends Component {
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
                             when they are given access to opportunity.
                         </p>
-                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                        <Link to="/"><button className="button-white" type="button">Read more</button></Link>
                     </Col>
                 </Row>
             </Grid>
 
-            <h1><a id="Partners" className="anchor" href="/#">Partners</a></h1>
-            <Partners />
+            <Grid fluid className="m-margin-t-b">
+                <Row center="xs">
+                    <Col><h1>In the press</h1></Col>
+                </Row>
+                <Row>
+                    <Col xs={12} md={4}>
+                        <img src={require("../assets/images/misc/grass.jpg")} className="responsive xlarge display-block center" alt="family"/>
+                        <div className="l-container">
+                            <h2 className="s-margin-t-b">Article 1 Title</h2>
+                            Short description about the article that you will be reading if you click the button below.
+                            <br/>
+                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <img src={require("../assets/images/misc/jacks.jpg")} className="responsive xlarge display-block center" alt="family"/>
+                        <div className="l-container">
+                            <h2 className="s-margin-t-b">Article 2 Title</h2>
+                            Short description about the article that you will be reading if you click the button below. Maybe this one can be a bit longer.
+                            <br/>
+                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <img src={require("../assets/images/misc/old-class.jpg")} className="responsive xlarge display-block center" alt="family"/>
+                        <div className="l-container">
+                            <h2 className="s-margin-t-b">Article 3 Title</h2>
+                            Short description about the article that you will be reading if you click the button below. And this one will be longer than the previous one so we have a good idea on the lengths of paragraphs.
+                            <br/>
+                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                        </div>
+                        
+                    </Col>
+                </Row>
+            </Grid>
+            
+            <div className="full-width bg-light-grey">
+                <div className="center-text">
+                    <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners</h1>
+                    <p>We are proud to partner with so many dedicated organizations!</p>
+                </div>
+                <Partners />
+                <Grid fluid className="l-container">
+                    <Row>
+                        <Col xs={12} md={6}>
+                            <h2>Get Involved</h2>
+                            <p>The David and Mikel Blair Family Foundation is dedicated to working with our community. To get involved fill out the contact form or email us at <u>info@theblairfamilyfoundation.org</u></p>
+                        </Col>
+                        <Col xs={12} sm={6}>
+                            <h2 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us</h2>
+                            <ContactUs />
+                        </Col>
+                    </Row>
+                </Grid>
+            </div>
 
-            <div className="wrapper">  
-                <div className="full-width">
-                    <div className="wrapper white semi-thick-font">
-                        <h1 className="center-text"><a id="About Us" className="anchor" href="/#">About Us</a>About Us</h1>
-                        <p>
+
+            {/* Extras! */}
+
+                {/* <div className="wrapper">  
+                    <div className="full-width">
+                        <div className="wrapper m-padding-b">
+                            <h2 className="center-text">Get our newsletter and updates</h2>
+                            <SubscribeForm />
+                        </div>
+                    </div>
+                </div> */}
+
+                {/*  <p>
                             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. From literacy and equity in 
                             education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the 
                             world, when they are given access to opportunity. 
@@ -137,28 +198,7 @@ export default class Home extends Component {
                         <p>
                             David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time 
                             and resources to economic development, educational opportunities, arts programs and health-based initiatives. 
-                        </p>
-                    </div>
-                    
-                    <div className="center-text m-padding-b">
-                        <img
-                            className="responsive xxlarge"
-                            alt="family"
-                            src={require("../assets/images/family.jpg")} />
-                    </div>
-                </div>
-
-                <h1 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us</h1>
-                <ContactUs />
-                <div className="wrapper">  
-                    <div className="full-width">
-                        <div className="wrapper m-padding-b">
-                            <h2 className="center-text">Get our newsletter and updates</h2>
-                            <SubscribeForm />
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </p> */}
             </>
         )
     }

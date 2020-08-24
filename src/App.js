@@ -13,6 +13,7 @@ import './assets/css/Text.css'
 import './assets/css/Images.css'
 import './assets/css/Align.css'
 import './assets/css/Forms.css'
+import './assets/css/Misc.css'
 import './assets/css/PDF.css'
 import './assets/css/Animations.css'
 

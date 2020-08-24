@@ -8,7 +8,6 @@ img.xsmall {
     width: 100%;
     height: auto;
     max-width: 50px;
-    padding: 5px;
 }
 
 img.small {
@@ -21,21 +20,18 @@ img.medium {
     width: 100%;
     height: auto;
     max-width: 150px;
-    padding: 5px;
 }
 
 img.large {
     width: 100%;
     height: auto;
     max-width: 300px;
-    padding: 5px;
 }
 
 img.xlarge {
     width: 100%;
     height: auto;
     max-width: 450px;
-    padding: 5px;
 }
 
 
@@ -244,8 +240,6 @@ img.rounded {
     }
 }
 
-
-
 .focus-container .text {
     transition: .2s ease;
     position: absolute;
@@ -257,7 +251,7 @@ img.rounded {
     text-align: center;
     font-style: bold;
     /* font-size: 4vw; */
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 3px 1.5px 1px black;
 }
 
@@ -276,7 +270,6 @@ img.rounded {
     font-size: 18px;
 }
 
-  
   .focus-container:hover img {
     opacity: 0.1;
   }

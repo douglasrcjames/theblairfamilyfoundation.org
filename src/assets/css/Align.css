@@ -446,16 +446,6 @@ body {
     background-color: #71a75d;
   }
 
-  .full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 25px 0 20px 0;
-  }
-
   .full-width.bg-light-grey {
     background-color: #eeeeee;
 }
