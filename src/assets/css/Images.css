@@ -153,7 +153,6 @@ img.rounded {
   
 /* Position text in the middle of the page/image */
 .bg-content {
-
     color: white;
     margin: 0;
     position: absolute;
@@ -163,30 +162,41 @@ img.rounded {
     z-index: 2;
     text-align: center;
     width: 75%;
+    border: 1px solid white;
+    border-top: 0;
 }
 
 .bg-content:before {
-    content: " ";
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 0;
     right: 0;
-    height: 100%;
-    border: 1px solid white;
-
+    left: calc(50% + 125px/2);
+    height: 1px;
+    background: white;
+}
+.bg-content:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: calc(50% + 125px/2);
+    height: 1px;
+    background: white;
 }
 
 .bg-h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 2.8em;
+    margin: 0 0 20px 0;
 }
 
 .bg-p {
     font-size: 1.2em;
+    width: 50% !important;
 }
 
 .bg-text-box {
-    padding: 50px 0 50px 0;
+    padding: 40px 0 50px 0;
 }
 
    
@@ -199,15 +209,16 @@ img.rounded {
 
     .bg-p {
         font-size: 14px;
+        width: 80% !important;
     }
 
     .bg-h1 {
         margin: 0 0 1% 0;
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .bg-text-box {
-        padding: 50px 0 50px 0;
+        padding: 25px 0 50px 0;
     }
 }
 
@@ -215,6 +226,7 @@ img.rounded {
     width: 100%;
     height: auto;
     max-width: 125px;
+    margin: -50px 0px 0px 0px;
 }
 
 

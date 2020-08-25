@@ -14,14 +14,13 @@ export default class Home extends Component {
                 <div className="bg-content">
                     <img
                         className="responsive middle-logo"
-                        style={{margin: "-50px 0px 0px 0px"}}
                         alt="creek"
                         src={require("../assets/images/logo/b-w-border.png")} />
                     <br/>
                     <div className="bg-text-box">
                         <h1 className="bg-h1">Committed to Montgomery County</h1>
-                        <div className="m-width center">
-                            <p className="bg-p">Working with partners and communities across the county to address long-term quality of life challenges and opportunities.</p>
+                        <div className="bg-p center">
+                            Working with partners and communities across the county to address long-term quality of life challenges and opportunities.
                         </div>
                         
                     </div>
@@ -32,7 +31,7 @@ export default class Home extends Component {
             <Grid fluid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b">
-                        <h1>Our Story</h1>
+                        <h1>Our Story.</h1>
                         <p>
                             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
@@ -40,18 +39,18 @@ export default class Home extends Component {
                         </p>
                         <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
                     </Col>
-                    <Col sm={12} lg={6} className="s-margin-t-b">
+                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/family.jpg")} className="responsive xxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
             <Grid fluid>
                 <Row className="l-container">
-                    <Col sm={12} lg={6} className="s-margin-t-b">
-                        <img src={require("../assets/images/nature.png")} className="responsive xxlarge m-padding" alt="family"/>
+                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
+                        <img src={require("../assets/images/nature.png")} className="responsive xxlarge" alt="family"/>
                     </Col>
                     <Col sm={12} lg={6} className="s-margin-t-b">
-                        <h1>Our Focus</h1>
+                        <h1>Our Focus.</h1>
                         <p>
                             We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
                             We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
@@ -102,10 +101,10 @@ export default class Home extends Component {
             <Grid fluid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b">
-                        <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge m-padding" alt="family"/>
+                        <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge box-text-v-align" alt="family"/>
                     </Col>
                     <Col sm={12} lg={6} className="s-margin-t-b">
-                        <h1>Racial Equality</h1>
+                        <h1>Racial Equality.</h1>
                         <p>
                             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
@@ -154,18 +153,18 @@ export default class Home extends Component {
             
             <div className="full-width bg-light-grey">
                 <div className="center-text">
-                    <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners</h1>
+                    <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
                     <p>We are proud to partner with so many dedicated organizations!</p>
                 </div>
                 <Partners />
                 <Grid fluid className="l-container">
                     <Row>
                         <Col xs={12} md={6}>
-                            <h2>Get Involved</h2>
+                            <h2>Get Involved.</h2>
                             <p>The David and Mikel Blair Family Foundation is dedicated to working with our community. To get involved fill out the contact form or email us at <u>info@theblairfamilyfoundation.org</u></p>
                         </Col>
                         <Col xs={12} sm={6}>
-                            <h2 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us</h2>
+                            <h2 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us.</h2>
                             <ContactUs />
                         </Col>
                     </Row>

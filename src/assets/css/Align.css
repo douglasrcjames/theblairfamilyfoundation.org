@@ -408,6 +408,12 @@ body {
 * Misc 
 */
 
+.vertical-middle {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .inline {
     display: inline; 
 }
@@ -420,6 +426,8 @@ body {
     display: flex;
     align-items:center;
  }
+
+
 
  /* Slick slider */
  .slick-initialized .slick-slide {
