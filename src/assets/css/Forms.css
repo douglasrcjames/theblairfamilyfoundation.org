@@ -98,7 +98,7 @@ textarea:focus ~ label, textarea:valid ~ label {
 button.send-btn {
     color: #B1B1B1;
     font-size: 25px;
-    font-family: "FuturaBook";
+    font-family: "CormorantGaramond-Regular";
     transition: 0.2s ease;
     padding: 0;
     background: none;
@@ -120,7 +120,7 @@ button.send-btn:hover {
 button.subscribe-btn {
     color: #B1B1B1;
     font-size: 25px;
-    font-family: "FuturaBook";
+    font-family: "CormorantGaramond-Regular";
     transition: 0.2s ease;
     padding: 0;
     background: none;
@@ -139,7 +139,7 @@ button.subscribe-btn:hover {
   cursor: pointer;
 }
 
-.button-white {
+.button-grey {
     color: #454545;
     font-family: "CormorantGaramond-Regular";
     background: transparent;
@@ -157,7 +157,7 @@ button.subscribe-btn:hover {
     text-transform: uppercase;
 }
 
-.button-white:before, .button-white:after {
+.button-grey:before, .button-grey:after {
     content: '';
     display: block;
     position: absolute;
@@ -169,30 +169,58 @@ button.subscribe-btn:hover {
     transition: all 0.3s ease-in-out
 }
 
-.button-white:before {
+.button-grey:before {
     top: -6px;
     left: -6px;
     border-width: 2px 0 0 2px;
     z-index: 5;
 }
 
-.button-white:after {
+.button-grey:after {
     bottom: -6px;
     right: -6px;
     border-width: 0 2px 2px 0;
 }
 
-.button-white:hover:before, .button-white:hover:after {
+.button-grey:hover:before, .button-grey:hover:after {
     width: calc(100% + 12px);
     height: calc(100% + 12px);
     border-color: #717C7D
 }
 
-.button-white:hover {
+.button-grey:hover {
     color :#fff;
     background-color: #717C7D;
     border-color: #717C7D
 }
+
+
+  .button-plain-white {
+    text-transform: uppercase;
+    margin-top: -100px !important;
+    padding: 10px 20px;
+    font-family: "CormorantGaramond-Regular";
+    font-weight: bold;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: #fff
+  }
+  /**** BTN No. 1 ****/
+  .btn-1 {
+    border: 1px solid #fff;
+  }
+  .btn-1:hover {
+    background: #fff;
+    color: black;
+  }
+  .btn-1:active {
+    top: 1px;
+  }
+
 
 .panel {
     max-width: 960px;

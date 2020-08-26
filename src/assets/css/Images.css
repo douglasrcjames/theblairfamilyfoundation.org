@@ -106,50 +106,6 @@ img.rounded {
     background-size: cover;
 }
 
-.bg-image-focus-1 {
-    /* The image used */
-    background:
-    /* bottom, image */
-    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
-    
-    /* Full height */
-    height: 200px;
-    
-    /* Center and scale the image nicely */
-    background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image-focus-2 {
-    /* The image used */
-    background:
-    /* bottom, image */
-    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
-    
-    /* Full height */
-    height: 200px;
-    
-    /* Center and scale the image nicely */
-    background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image-focus-3 {
-    /* The image used */
-    background:
-    /* bottom, image */
-    url("https://firebasestorage.googleapis.com/v0/b/theblairfamilyfoundation-org.appspot.com/o/family.jpg?alt=media&token=ad8e04b7-0ff1-420e-a34f-bbf8425adcd4");
-    
-    /* Full height */
-    height: 200px;
-    
-    /* Center and scale the image nicely */
-    background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
   
 /* Position text in the middle of the page/image */
 .bg-content {
@@ -245,10 +201,11 @@ img.rounded {
     backface-visibility: hidden;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1600px) {
     .focus-container {
-        max-height: 200px;
+        max-height: 250px;
         overflow: hidden;
+
     }
 }
 
@@ -276,10 +233,78 @@ img.rounded {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    color: black;
-    font-weight: 900;
-    /* font-size: 1.5vw; */
-    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-width: 0 1px;
+    border-bottom: 0;
+    display: inline-block;
+}
+
+.focus-container .hover-text button {
+    margin: 0 0 -50px 0 !important;
+}
+
+@media(max-width: 900px) {
+    .focus-container .hover-text { 
+        width: 80% !important; 
+    }
+
+    .focus-container .hover-text p {
+        line-height: 1.4 !important;
+        font-size: 12px !important;
+        padding: 10px 10px 5px 10px !important;
+    }
+}
+
+.focus-container .hover-text h2 {
+    font-size: 30px;
+    margin: -0.65em auto -0.45em;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2em;
+  }
+  .focus-container .hover-text h2:before,
+  .focus-container .hover-text h2:after {
+    content: "";
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    height: 0.65em;
+    border-bottom: 1px solid #fff;
+    margin: 0 2% 0 -55%;
+  }
+  .focus-container .hover-text h2:after {
+    margin: 0 -55% 0 2%;
+  }
+
+.focus-container .hover-text p {
+    line-height: 1.6;
+    font-size: 14px;
+    padding: 25px 25px 15px 25px;
+}
+
+.focus-container .hover-text:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: calc(50% + 150px/2);
+    height: 1px;
+    background: white;
+}
+.focus-container .hover-text:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: calc(50% + 150px/2);
+    height: 1px;
+    background: white;
+}
+
+.focus-container:hover {
+    background-color: black;
+    opacity: 0.8;
 }
 
   .focus-container:hover img {

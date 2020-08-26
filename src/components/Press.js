@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Background from '../assets/images/press.jpg';
+import Background from '../assets/images/misc/press.jpg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default class Press extends Component {

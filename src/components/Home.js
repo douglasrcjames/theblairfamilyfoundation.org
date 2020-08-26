@@ -3,9 +3,28 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
 import Partners from './Partners.js';
 import ContactUs from './ContactUs.js';
-import SubscribeForm from './misc/SubscribeForm.js';
+// import SubscribeForm from './misc/SubscribeForm.js';
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { width: 0, height: 0 };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+      }
+      
+      componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+      }
+
     render() {
         return (
             <>
@@ -28,7 +47,7 @@ export default class Home extends Component {
                 </div>
             </div>
 
-            <Grid fluid className="full-width bg-light-grey">
+            <Grid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
@@ -37,17 +56,17 @@ export default class Home extends Component {
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
                             when they are given access to opportunity.
                         </p>
-                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                        <Link to="/focus/education"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
-                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/family.jpg")} className="responsive xxlarge green-border" alt="family" />
+                    <Col sm={12} lg={6} className="box-text-v-align">
+                        <img src={require("../assets/images/misc/family.jpg")} className="responsive xxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
             <Grid fluid>
                 <Row className="l-container">
                     <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/nature.png")} className="responsive xxlarge" alt="family"/>
+                        <img src={require("../assets/images/misc/landscape.jpg")} className="responsive xxlarge" alt="landscape"/>
                     </Col>
                     <Col sm={12} lg={6} className="s-margin-t-b">
                         <h1>Our Focus.</h1>
@@ -56,52 +75,52 @@ export default class Home extends Component {
                             We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
                             We use creative philanthropy to maximize our impact.
                         </p>
-                        <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                        <Link to="/focus/education"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                 </Row>
             </Grid>
-            <Grid fluid className="no-padding s-margin-b">
+            <Grid fluid className="no-padding">
                 <Row>
-                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
+                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
                         <img src={require("../assets/images/focus/education.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Education</h4>
                         </div>
                         <div className="hover-text">
-                            <h2 className="no-margin">Education</h2>
+                            <h2>Education</h2>
                             <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
-                            <Link to="/focus/education"><button className="button-white" type="button">Learn more</button></Link>
+                            <Link to="/focus/education"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
-                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
-                        <img src={require("../assets/images/focus/equality.jpg")} className="responsive" alt="focus 1"/>
+                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
+                        <img src={require("../assets/images/focus/equal.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Equality</h4>
                         </div>
                         <div className="hover-text">
-                            <h2 className="no-margin">Equality</h2>
-                            <p>The foundation is focused on bringing balance for under served minority groups in the county.</p>
-                            <Link to="/focus/equality"><button className="button-white" type="button">Learn more</button></Link>
+                            <h2>Equality</h2>
+                            <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
+                            <Link to="/focus/equality"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
-                    <Col sm={12} lg={4} className="s-margin-t-b focus-container no-padding">
-                        <img src={require("../assets/images/focus/environment.jpg")} className="responsive" alt="focus 1"/>
+                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
+                        <img src={require("../assets/images/focus/environment-1.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Environment</h4>
                         </div>
                         <div className="hover-text">
-                            <h2 className="no-margin">Environment</h2>
+                            <h2>Environment</h2>
                             <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
-                            <Link to="/focus/environment"><button className="button-white" type="button">Learn more</button></Link>
+                            <Link to="/focus/environment"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
                 </Row>
             </Grid>
 
-            <Grid fluid className="full-width bg-light-grey">
+            <Grid className="full-width bg-light-grey">
                 <Row className="l-container">
-                    <Col sm={12} lg={6} className="s-margin-t-b">
-                        <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge box-text-v-align" alt="family"/>
+                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
+                        <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge" alt="family"/>
                     </Col>
                     <Col sm={12} lg={6} className="s-margin-t-b">
                         <h1>Racial Equality.</h1>
@@ -110,7 +129,7 @@ export default class Home extends Component {
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
                             when they are given access to opportunity.
                         </p>
-                        <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                        <Link to="/"><button className="button-grey" type="button">Read more</button></Link>
                     </Col>
                 </Row>
             </Grid>
@@ -126,7 +145,7 @@ export default class Home extends Component {
                             <h2 className="s-margin-t-b">Article 1 Title</h2>
                             Short description about the article that you will be reading if you click the button below.
                             <br/>
-                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                            <Link to="/"><button className="button-grey" type="button">Read more</button></Link>
                         </div>
                     </Col>
                     <Col xs={12} md={4}>
@@ -135,7 +154,7 @@ export default class Home extends Component {
                             <h2 className="s-margin-t-b">Article 2 Title</h2>
                             Short description about the article that you will be reading if you click the button below. Maybe this one can be a bit longer.
                             <br/>
-                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                            <Link to="/"><button className="button-grey" type="button">Read more</button></Link>
                         </div>
                     </Col>
                     <Col xs={12} md={4}>
@@ -144,7 +163,7 @@ export default class Home extends Component {
                             <h2 className="s-margin-t-b">Article 3 Title</h2>
                             Short description about the article that you will be reading if you click the button below. And this one will be longer than the previous one so we have a good idea on the lengths of paragraphs.
                             <br/>
-                            <Link to="/"><button className="button-white" type="button">Read more</button></Link>
+                            <Link to="/"><button className="button-grey" type="button">Read more</button></Link>
                         </div>
                         
                     </Col>
