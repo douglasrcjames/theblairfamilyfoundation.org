@@ -9,25 +9,23 @@ export default class Partners extends Component {
             )
         } else {
             return (
-                <div className="m-margin-b">
-                    <Slider {...settings1}>
-                        {shuffle(partners).map((partner, index) => (
-                            <div key={index} className="m-padding">
-                                    <a 
-                                    href={partner.webUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >        
-                                    <img
-                                        className={`responsive ${partner.picSize}`}
-                                        alt="partner logo"
-                                        src={partner.picPath}
-                                        />
-                                </a>
-                            </div>
-                            ))}
-                    </Slider>
-                </div>
+                <Slider {...settings1}>
+                    {shuffle(partners).map((partner, index) => (
+                        <div key={index}>
+                            <a 
+                                href={partner.webUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >        
+                                <img
+                                    className={`responsive ${partner.picSize}`}
+                                    alt="partner logo"
+                                    src={partner.picPath}
+                                    />
+                            </a>
+                        </div>
+                        ))}
+                </Slider>
             )
         }
         

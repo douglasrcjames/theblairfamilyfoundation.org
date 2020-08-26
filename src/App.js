@@ -16,6 +16,7 @@ import './assets/css/Forms.css'
 import './assets/css/Misc.css'
 import './assets/css/PDF.css'
 import './assets/css/Animations.css'
+import './assets/css/Footer.css'
 
 function App() {
   return (

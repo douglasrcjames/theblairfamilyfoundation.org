@@ -49,7 +49,7 @@ export default class Home extends Component {
 
             <Grid className="full-width bg-light-grey">
                 <Row className="l-container">
-                    <Col sm={12} lg={6} className="s-margin-t-b">
+                    <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
                         <p>
                             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
@@ -58,17 +58,17 @@ export default class Home extends Component {
                         </p>
                         <Link to="/focus/education"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
-                    <Col sm={12} lg={6} className="box-text-v-align">
+                    <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/misc/family.jpg")} className="responsive xxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
             <Grid fluid>
                 <Row className="l-container">
-                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
+                    <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/misc/landscape.jpg")} className="responsive xxlarge" alt="landscape"/>
                     </Col>
-                    <Col sm={12} lg={6} className="s-margin-t-b">
+                    <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Focus.</h1>
                         <p>
                             We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
@@ -81,7 +81,7 @@ export default class Home extends Component {
             </Grid>
             <Grid fluid className="no-padding">
                 <Row>
-                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
                         <img src={require("../assets/images/focus/education.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Education</h4>
@@ -92,7 +92,7 @@ export default class Home extends Component {
                             <Link to="/focus/education"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
-                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
                         <img src={require("../assets/images/focus/equal.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Equality</h4>
@@ -103,7 +103,7 @@ export default class Home extends Component {
                             <Link to="/focus/equality"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
-                    <Col sm={this.state.width > 1600 ? 4 : 12} className="focus-container no-padding">
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
                         <img src={require("../assets/images/focus/environment-1.jpg")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Environment</h4>
@@ -119,10 +119,10 @@ export default class Home extends Component {
 
             <Grid className="full-width bg-light-grey">
                 <Row className="l-container">
-                    <Col sm={12} lg={6} className="s-margin-t-b box-text-v-align">
+                    <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge" alt="family"/>
                     </Col>
-                    <Col sm={12} lg={6} className="s-margin-t-b">
+                    <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Racial Equality.</h1>
                         <p>
                             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 

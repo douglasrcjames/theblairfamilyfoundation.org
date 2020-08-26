@@ -78,7 +78,7 @@ export default class ContactUs extends Component {
                             <Grid fluid>
                                 {/* Row 1 */}
                                 <Row>
-                                    <Col sm={12} md={6} className="p-container m-margin-b">
+                                    <Col xs={12} md={6} className="p-container m-margin-b">
                                         <Field
                                             type="text"
                                             required
@@ -94,7 +94,7 @@ export default class ContactUs extends Component {
                                         )}
                                         <label>Your name</label>
                                     </Col>
-                                    <Col sm={12} md={6} className="p-container m-margin-b">
+                                    <Col xs={12} md={6} className="p-container m-margin-b">
                                         <Field
                                             type="text"
                                             required

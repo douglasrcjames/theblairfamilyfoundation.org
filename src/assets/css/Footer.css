@@ -1,0 +1,57 @@
+.f-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    background-color: #6E7C7C;
+  }
+
+  .f-heading {
+    color: white;
+    margin: 0 0 12px 0;
+    font-size: 18px;
+  }
+
+  .f-link-section {
+      margin: 10px 0 10px 0;
+  }
+
+  .f-link {
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin: 6px 0 6px 0;
+  }
+
+  .f-link:hover {
+    color: #A7BDB1;
+  }
+
+  .f-logo-section {
+      text-align: center;
+  }
+
+  .f-logo {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .f-copyright {
+    color: white;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .f-logo {
+        max-width: 50px;
+      }
+
+    .f-container { 
+        height: 22rem;
+    }
+  }
