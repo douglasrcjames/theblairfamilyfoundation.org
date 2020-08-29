@@ -24,27 +24,18 @@ export default class Header extends Component {
     }
 
     render() {
-        const menuArray = ['Press', 'Our Focus', 'Partners', 'About Us', 'Contact Us']
+        const menuArray = ['Press', 'Our Focus', 'About Us', 'Contact Us']
 
         const menuItems = menuArray.map((val,index)=>{
-            if(val === 'Press'){
                 return (
-                    <Link to="/press" key={index}>
+                    <Link to={`/${val.split(" ").join("-").toLowerCase()}`} key={index}>
                         <MenuItem 
                             delay={`${index * 0.1}s`}
-                            onClick={()=>{this.handleLinkClick();}}>{val}</MenuItem>
+                            onClick={()=>{this.handleLinkClick();}}>
+                            {val}
+                        </MenuItem>
                     </Link>
                  )
-            } else {
-                return (
-                    <Link to={`/#${val}`} key={index}>
-                        <MenuItem 
-                            delay={`${index * 0.1}s`}
-                            onClick={()=>{this.handleLinkClick();}}>{val}</MenuItem>
-                    </Link>
-                 )
-            }
-            
           });
 
         return (
@@ -62,24 +53,13 @@ export default class Header extends Component {
                     
                         <ul>
                             {  menuArray.map((val, index)=>{
-                                    if(val === 'Press'){
-                                        return (
-                                            <li key={index}>
-                                                <Link to="/press">
-                                                    {val}
-                                                </Link>
-                                            </li>
-                                        )
-                                    } else {
-                                        return (
-                                            <li key={index}>
-                                                <Link to={`/#${val}`}>
-                                                    {val}
-                                                </Link>
-                                            </li>
-                                        )
-                                    }
-                                    
+                                    return (
+                                        <li key={index}>
+                                            <Link to={`/${val.split(" ").join("-").toLowerCase()}`}>
+                                                {val}
+                                            </Link>
+                                        </li>
+                                    )
                                 })
                             }
                         </ul>

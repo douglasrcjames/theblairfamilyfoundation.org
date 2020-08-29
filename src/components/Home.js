@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
 import Partners from './Partners.js';
-import ContactUs from './ContactUs.js';
+import GetInvolved from './misc/GetInvolved.js';
 // import SubscribeForm from './misc/SubscribeForm.js';
 
 export default class Home extends Component {
@@ -56,7 +56,7 @@ export default class Home extends Component {
                             From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
                             when they are given access to opportunity.
                         </p>
-                        <Link to="/focus/education"><button className="button-grey" type="button">Learn more</button></Link>
+                        <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/misc/family.jpg")} className="responsive xxlarge green-border" alt="family" />
@@ -75,7 +75,7 @@ export default class Home extends Component {
                             We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
                             We use creative philanthropy to maximize our impact.
                         </p>
-                        <Link to="/focus/education"><button className="button-grey" type="button">Learn more</button></Link>
+                        <Link to="/our-focus/"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                 </Row>
             </Grid>
@@ -89,7 +89,7 @@ export default class Home extends Component {
                         <div className="hover-text">
                             <h2>Education</h2>
                             <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
-                            <Link to="/focus/education"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <Link to="/our-focus/education"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -100,7 +100,7 @@ export default class Home extends Component {
                         <div className="hover-text">
                             <h2>Equality</h2>
                             <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
-                            <Link to="/focus/equality"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <Link to="/our-focus/equality"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -111,7 +111,7 @@ export default class Home extends Component {
                         <div className="hover-text">
                             <h2>Environment</h2>
                             <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
-                            <Link to="/focus/environment"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <Link to="/our-focus/environment"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
                         </div>
                     </Col>
                 </Row>
@@ -176,18 +176,7 @@ export default class Home extends Component {
                     <p>We are proud to partner with so many dedicated organizations!</p>
                 </div>
                 <Partners />
-                <Grid fluid className="l-container">
-                    <Row>
-                        <Col xs={12} md={6}>
-                            <h2>Get Involved.</h2>
-                            <p>The David and Mikel Blair Family Foundation is dedicated to working with our community. To get involved fill out the contact form or email us at <u>info@theblairfamilyfoundation.org</u></p>
-                        </Col>
-                        <Col xs={12} sm={6}>
-                            <h2 className="s-padding-t"><a id="Contact Us" className="anchor" href="/#">Contact Us</a>Contact Us.</h2>
-                            <ContactUs />
-                        </Col>
-                    </Row>
-                </Grid>
+                <GetInvolved />
             </div>
 
 

@@ -1,3 +1,104 @@
 .green-border {
     border: 2px solid #71a75d;
 }
+
+
+.family-hero {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+.overlap {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    height: 600px;
+    display: block;
+    margin-top: -10%;
+    overflow: hidden;
+}
+
+.overlap-logo {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin: -40px 0px 0px 0px;
+}
+
+.overlap-inner {
+    color: black;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+    height: auto;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.overlap-inner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: calc(50% + 125px/2);
+    height: 1px;
+    background: black;
+}
+.overlap-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: calc(50% + 125px/2);
+    height: 1px;
+    background: black;
+}
+
+.overlap-h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+.overlap-p p {
+    padding: 0 25px 0 25px;
+    line-height: 1.6 !important;
+}
+
+@media(max-width: 1300px) {
+    .overlap-logo {
+        max-width: 75px;
+        margin: -30px 0px 0px 0px;
+    }
+
+    .overlap-inner:before {
+        left: calc(50% + 100px/2) !important;
+    }
+    .overlap-inner:after {
+        right: calc(50% + 100px/2) !important;
+    }
+
+    .overlap-h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 18px !important;
+    }
+    
+    .overlap-p p {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 600px) {
+    .overlap {
+        height: 900px;
+    }
+}
+

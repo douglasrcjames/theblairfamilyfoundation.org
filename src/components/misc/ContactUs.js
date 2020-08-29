@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import * as yup from 'yup'
 import { Formik, Field } from 'formik';
-import { firestore } from "../Fire.js";
+import { firestore } from "../../Fire.js";
 import { store } from 'react-notifications-component';
-import '../assets/css/Cards.css'
+import '../../assets/css/Cards.css'
 
 const formSchema = yup.object().shape({
     email: yup
