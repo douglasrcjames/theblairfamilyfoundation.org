@@ -27,6 +27,17 @@ export default class Header extends Component {
         const menuArray = ['Press', 'Our Focus', 'About Us', 'Contact Us']
 
         const menuItems = menuArray.map((val,index)=>{
+            if(val === "Contact Us"){
+                return (
+                    <Link to={`/about-us#${val.split(" ").join("-").toLowerCase()}`} key={index}>
+                        <MenuItem 
+                            delay={`${index * 0.1}s`}
+                            onClick={()=>{this.handleLinkClick();}}>
+                            {val}
+                        </MenuItem>
+                    </Link>
+                 )
+            } else {
                 return (
                     <Link to={`/${val.split(" ").join("-").toLowerCase()}`} key={index}>
                         <MenuItem 
@@ -36,6 +47,8 @@ export default class Header extends Component {
                         </MenuItem>
                     </Link>
                  )
+            }
+                
           });
 
         return (
@@ -53,6 +66,15 @@ export default class Header extends Component {
                     
                         <ul>
                             {  menuArray.map((val, index)=>{
+                                 if(val === "Contact Us"){
+                                    return (
+                                        <li key={index}>
+                                            <Link to={`/about-us#${val}`}>
+                                                {val}
+                                            </Link>
+                                        </li>
+                                    )
+                                 } else {
                                     return (
                                         <li key={index}>
                                             <Link to={`/${val.split(" ").join("-").toLowerCase()}`}>
@@ -60,6 +82,7 @@ export default class Header extends Component {
                                             </Link>
                                         </li>
                                     )
+                                 }
                                 })
                             }
                         </ul>

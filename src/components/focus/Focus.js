@@ -3,20 +3,32 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Link } from 'react-router-dom';
 import GetInvolved from '../misc/GetInvolved';
 
-var topBgImageStyle = {
-    width: "100%",
-    height: "300px",
-    backgroundImage: `url(${require("../../assets/images/misc/landscape.jpg")})`,
-    backgroundPosition: "50% 50%", // change me around to move up and down!
-    backgroundSize: "cover"
-  };
-
 export default class Focus extends Component {
     render() {
         return (
-            <>
-            <div style ={ topBgImageStyle }></div>
             <div>
+                <img
+                    className="focus-hero"
+                    alt="family"
+                    src={require("../../assets/images/misc/landscape-cut.jpg")} />
+                <div className="overlap-2 l-container"> 
+                    <div className="overlap-inner">
+                        <div className="center-text">
+                            <img
+                                className="responsive overlap-logo"
+                                alt="creek"
+                                src={require("../../assets/images/logo/b-w-border-black.png")} />
+                        </div>
+                        <br/>
+                        <h1 className="overlap-h1">Committed to Montgomery County</h1>
+                        <div className="overlap-p center">
+                            <p>
+                                Montgomery County is at the center of everything we do. As an operating foundation, we focus on Education, Equality, and the Environment. 
+                                These three cores are our compass and guide all initiatives, whether practice-, policy-, or research-oriented. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <Grid className="full-width bg-light-grey">
                     <Row className="l-container">
                         <Col xs={12} lg={6} className="s-margin-t-b">
@@ -67,7 +79,6 @@ export default class Focus extends Component {
                 </Grid>
                 <GetInvolved />
             </div>
-            </>
         )
     }
 }

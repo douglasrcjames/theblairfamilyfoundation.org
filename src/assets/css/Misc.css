@@ -10,11 +10,28 @@
     width: 100%;
 }
 
-.overlap {
+.focus-hero {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+.overlap-1 {
     z-index: 2;
     position: relative;
     background-color: white;
     height: 600px;
+    display: block;
+    margin-top: -10%;
+    overflow: hidden;
+}
+
+.overlap-2 {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    height: 400px;
     display: block;
     margin-top: -10%;
     overflow: hidden;
@@ -77,6 +94,10 @@
         max-width: 75px;
         margin: -30px 0px 0px 0px;
     }
+s
+    .overlap-2 {
+        height: 300px;
+    }
 
     .overlap-inner:before {
         left: calc(50% + 100px/2) !important;
@@ -86,8 +107,6 @@
     }
 
     .overlap-h1 {
-        text-align: center;
-        margin: 0;
         font-size: 18px !important;
     }
     
@@ -96,9 +115,34 @@
     }
 }
 
-@media(max-width: 600px) {
-    .overlap {
-        height: 900px;
+@media(max-width: 624px) {
+
+    .overlap-logo {
+        max-width: 50px;
+        margin: -20px 0px 0px 0px;
     }
+
+    .overlap-inner:before {
+        left: calc(50% + 75px/2) !important;
+    }
+    .overlap-inner:after {
+        right: calc(50% + 75px/2) !important;
+    }
+
+    .overlap-p p {
+        font-size: 12px !important;
+    }
+
+    .overlap-1 {
+        height: 650px;
+    }
+
 }
 
+@media(max-width: 375px) {
+
+    .overlap-1 {
+        height: 850px;
+    }
+
+}

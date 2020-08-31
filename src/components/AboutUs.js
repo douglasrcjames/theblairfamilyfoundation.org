@@ -12,7 +12,7 @@ export default class AboutUs extends Component {
                     className="family-hero"
                     alt="family"
                     src={require("../assets/images/misc/family-crop-2.jpg")} />
-                <div className="overlap l-container"> 
+                <div className="overlap-1 l-container"> 
                     <div className="overlap-inner">
                         <div className="center-text">
                             <img
