@@ -29,7 +29,7 @@ export default class Focus extends Component {
                         </div>
                     </div>
                 </div>
-                <Grid className="full-width bg-light-grey">
+                <Grid fluid className="full-width bg-light-grey">
                     <Row className="l-container">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Education.</h1>
@@ -61,7 +61,7 @@ export default class Focus extends Component {
                         </Col>
                     </Row>
                 </Grid>
-                <Grid className="full-width bg-light-grey">
+                <Grid fluid className="full-width bg-light-grey">
                     <Row className="l-container">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Environment.</h1>

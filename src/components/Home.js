@@ -3,7 +3,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
 import Partners from './Partners.js';
 import GetInvolved from './misc/GetInvolved.js';
-// import SubscribeForm from './misc/SubscribeForm.js';
 
 export default class Home extends Component {
     constructor(props) {
@@ -47,7 +46,7 @@ export default class Home extends Component {
                 </div>
             </div>
 
-            <Grid className="full-width bg-light-grey">
+            <Grid fluid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
@@ -117,7 +116,7 @@ export default class Home extends Component {
                 </Row>
             </Grid>
 
-            <Grid className="full-width bg-light-grey">
+            <Grid fluid className="full-width bg-light-grey">
                 <Row className="l-container">
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                         <img src={require("../assets/images/misc/holding-kid.jpg")} className="responsive xxlarge" alt="family"/>
@@ -179,33 +178,6 @@ export default class Home extends Component {
                 <GetInvolved />
             </div>
 
-
-            {/* Extras! */}
-
-                {/* <div className="wrapper">  
-                    <div className="full-width">
-                        <div className="wrapper m-padding-b">
-                            <h2 className="center-text">Get our newsletter and updates</h2>
-                            <SubscribeForm />
-                        </div>
-                    </div>
-                </div> */}
-
-                {/*  <p>
-                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. From literacy and equity in 
-                            education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the 
-                            world, when they are given access to opportunity. 
-                        </p>
-
-                        <p>
-                            The David and Mikel Blair Family Foundation was founded in 2008 and is funded by the generosity of David and Mikel Blair. 
-                            The family foundation is based in Montgomery County, MD and their philanthropic efforts touch communities on a national scale.
-                        </p>
-
-                        <p>
-                            David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time 
-                            and resources to economic development, educational opportunities, arts programs and health-based initiatives. 
-                        </p> */}
             </>
         )
     }

@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import { store } from 'react-notifications-component';
 
 import { firestore } from "../../Fire.js";
+import { Col, Grid, Row } from 'react-flexbox-grid';
 
 const subscribeFormSchema = yup.object().shape({
     email: yup
@@ -60,22 +61,32 @@ class SubscribeForm extends Component {
                     >
                     {props => (
                         <form onSubmit={props.handleSubmit} className="form p-container">
-                            <Field
-                                type="text"
-                                className="white reduced "
-                                required
-                                onChange={props.handleChange}
-                                name="email"
-                                value={props.values.email}
-                            />
-                            <button className="subscribe-btn" type="submit" disabled={!props.dirty && !props.isSubmitting}>Subscribe</button>
-                            <br/>
-                            {props.errors.email && props.touched.email ? (
-                                <b className="dark-red s-margin-t">{props.errors.email}</b>
-                            ) : (
-                                ""
-                            )}
-                            <label className="white">Your email</label>
+                            <Grid>
+                                <Row>
+                                    <Col sm={12} md={10} className="s-margin-t-b p-container">
+                                        <Field
+                                            type="text"
+                                            required
+                                            onChange={props.handleChange}
+                                            name="email"
+                                            value={props.values.email}
+                                        />
+                                        
+                                        <br/>
+                                        {props.errors.email && props.touched.email ? (
+                                            <b className="dark-red s-margin-t">{props.errors.email}</b>
+                                        ) : (
+                                            ""
+                                        )}
+                                        <label>Your email</label>
+                                    </Col>
+                                    <Col sm={12} md={2} className="s-margin-t-b">
+                                        <button className="subscribe-btn" type="submit" disabled={!props.dirty && !props.isSubmitting}>Subscribe</button>
+                                    </Col>
+                                </Row>
+                            </Grid>
+                           
+                            
                         </form>
                     )}
                 </Formik>

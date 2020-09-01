@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "theblairfamilyfoundation-org"
+  },
+  "targets": {
+    "theblairfamilyfoundation-org": {
+      "hosting": {
+        "live": [
+          "theblairfamilyfoundation-org"
+        ],
+        "test": [
+          "test-blairfamilyfoundation"
+        ]
+      }
+    }
   }
 }

@@ -46,19 +46,19 @@ export default class Footer extends Component {
                                 The Blair Family Foundation
                             </div>
                             <div>
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="white">
+                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-facebook"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="white">
+                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-instagram"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="white">
+                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-linkedin"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="white">
+                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-twitter"/>
                                 </a>
                             </div>

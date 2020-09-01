@@ -29,6 +29,14 @@
     color: #A7BDB1;
   }
 
+  .f-icon {
+    color: white;
+  }
+
+  .f-icon:hover {
+    color: #A7BDB1;
+  }
+
   .f-logo-section {
       text-align: center;
   }

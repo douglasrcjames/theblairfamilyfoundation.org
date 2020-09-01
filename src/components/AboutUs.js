@@ -68,7 +68,7 @@ export default class AboutUs extends Component {
                             </div>
                             
                         </div> */}
-                <Grid className="full-width bg-light-grey">
+                <Grid fluid className="full-width bg-light-grey">
                     <Row center="xs">
                         <Col>
                             <h2>The Foundation Team</h2>
