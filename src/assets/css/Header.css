@@ -67,23 +67,18 @@
     display: inline-block;
   }
   
-  .navbar li a {
-    color: rgb(0, 42, 58);
+  .navbar li span {    
     display: block;
-    font-size: 0.9em;
     height: 50px;
     letter-spacing: 1px;
     margin: 0 20px;
     padding: 0 4px;
     position: relative;
-    text-decoration: none;
-    font-family: "CormorantGaramond-Bold";
-    text-transform: uppercase;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
   }
   
-  .navbar li a:hover {
+  .navbar li span:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
     color: rgb(167, 189, 177);
     transition: all 1s ease;
@@ -91,7 +86,7 @@
   }
   
   /* Animated Bottom Line */
-  .navbar li a:before, .navbar li a:after {
+  .navbar li span:before, .navbar li span:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -100,28 +95,64 @@
     background: rgb(13, 26, 38);
   }
   
-  .navbar li a:before {
+  .navbar li span:before {
     left: 0;
     transition: 0.5s;
   }
   
-  .navbar li a:after {
+  .navbar li span:after {
     background: rgb(13, 26, 38);
     right: 0;
     /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
   
-  .navbar li a:hover:before {
+  .navbar li span:hover:before {
     background: rgb(13, 26, 38);
     width: 100%;
     transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
   }
   
-  .navbar li a:hover:after {
+  .navbar li span:hover:after {
     background: transparent;
     width: 100%;
     /* transition: 0s; */
   }
+
+  /* Link text styling */
+  .navbar li span a {
+    color: rgb(0, 42, 58);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: "CormorantGaramond-Bold";
+    text-transform: uppercase;
+  }
+
+
+  /* SELECTED Animated Bottom Line */
+  .nav-selected:before, .nav-selected:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 25px;
+    left: 0;
+    background: rgb(13, 26, 38);
+  }
+
+  .nav-selected:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+  
+  .nav-selected:after {
+    background: transparent;
+    width: 90%;
+    /* transition: 0s; */
+  }
+  
+
+    
   
   
   /*======================================================

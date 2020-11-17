@@ -5,6 +5,7 @@ import '../../assets/css/Header.css';
 import Menu from './Menu';
 import MenuItem from './MenuItem';
 import MenuButton from './MenuButton';
+import { NavLink } from 'react-router-dom';
 
 export default class Header extends Component {
     constructor(props) {
@@ -69,17 +70,21 @@ export default class Header extends Component {
                                  if(val === "Contact Us"){
                                     return (
                                         <li key={index}>
-                                            <Link to={`/about-us#${val}`}>
-                                                {val}
-                                            </Link>
+                                            <span>
+                                                <Link to={`/about-us#${val}`}>
+                                                    {val}
+                                                </Link>
+                                            </span>
                                         </li>
                                     )
                                  } else {
                                     return (
                                         <li key={index}>
-                                            <Link to={`/${val.split(" ").join("-").toLowerCase()}`}>
-                                                {val}
-                                            </Link>
+                                            <span>
+                                                <NavLink exact activeClassName="nav-selected" to={`/${val.split(" ").join("-").toLowerCase()}`}>
+                                                    {val}
+                                                </NavLink>
+                                            </span>
                                         </li>
                                     )
                                  }
