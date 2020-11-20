@@ -30,7 +30,7 @@ export default class Footer extends Component {
         return (
             <footer className="f-container">
                 <Grid>
-                    <Row>
+                    <Row center="xs">
                         <Col xs={6} lg={3} className="f-logo-section">
                             <div>
                                 <img
@@ -63,7 +63,7 @@ export default class Footer extends Component {
                                 </a>
                             </div>
                         </Col>
-                        <Col xs={6} lg={3} className="f-link-section">
+                        {/* <Col xs={6} lg={3} className="f-link-section">
                             <h4 className="f-heading">About Us</h4>
                             <Link to="/" className="f-link">Vision &amp; Mission</Link>
                             <Link to="/" className="f-link">Core Values</Link>
@@ -81,7 +81,7 @@ export default class Footer extends Component {
                             <h4 className="f-heading">News &amp; Updates</h4>
                             <Link to="/" className="f-link">Resources</Link>
                             <Link to="/" className="f-link">Foundation in the News</Link>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Grid>
             </footer>
