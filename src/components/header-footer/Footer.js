@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Col, Grid, Row } from 'react-flexbox-grid';
-import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
     constructor(props) {
@@ -8,22 +7,7 @@ export default class Footer extends Component {
 
         this.state = { 
           year: new Date().getFullYear(),
-          deviceWidth: 0,
-          deviceHeight: 0
         };
-    }
-      
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-      
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-      
-    updateWindowDimensions = () => {
-        this.setState({ deviceWidth: window.innerWidth, deviceHeight: window.innerHeight });
     }
 
     render() {
@@ -35,7 +19,7 @@ export default class Footer extends Component {
                             <div>
                                 <img
                                     className="responsive f-logo"
-                                    alt="creek"
+                                    alt="blair foundation logo"
                                     src={require("../../assets/images/logo/b-w-border.png")} />
                             </div>
                             <div className="f-copyright">
@@ -46,19 +30,19 @@ export default class Footer extends Component {
                                 The Blair Family Foundation
                             </div>
                             <div>
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
+                                <a href="https://www.facebook.com/BlairFamilyFoundation/" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-facebook"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
+                                <a href="https://www.instagram.com/blairfamilyfdn/" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-instagram"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
+                                <a href="https://www.linkedin.com/company/blairfamilyfoundation/" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-linkedin"/>
                                 </a>
                                 &nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="f-icon">
+                                <a href="https://twitter.com/blairfamilyfdn?lang=en" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-twitter"/>
                                 </a>
                             </div>
