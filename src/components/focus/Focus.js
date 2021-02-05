@@ -30,10 +30,10 @@ export default class Focus extends Component {
                     </div>
                 </div>
                 <Grid fluid className="full-width bg-light-grey">
-                    <Row className="l-container">
+                    <Row className="l-container" middle="xs">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Education.</h1>
-                            <p>More details coming soon!</p>
+                            {/* <p>More details coming soon!</p> */}
                             {/* <p>
                                 The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
                                 From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
@@ -47,13 +47,13 @@ export default class Focus extends Component {
                     </Row>
                 </Grid>
                 <Grid fluid>
-                    <Row className="l-container">
+                    <Row className="l-container" middle="xs">
                         <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                             <img src={require("../../assets/images/misc/kid.jpg")} className="responsive xxlarge" alt="landscape"/>
                         </Col>
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Equality.</h1>
-                            <p>More details coming soon!</p>
+                            {/* <p>More details coming soon!</p> */}
                             {/* <p>
                                 The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
                                 From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
@@ -64,10 +64,10 @@ export default class Focus extends Component {
                     </Row>
                 </Grid>
                 <Grid fluid className="full-width bg-light-grey">
-                    <Row className="l-container">
+                    <Row className="l-container" middle="xs">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Environment.</h1>
-                            <p>More details coming soon!</p>
+                            {/* <p>More details coming soon!</p> */}
                             {/* <p>
                                 The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
                                 From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
