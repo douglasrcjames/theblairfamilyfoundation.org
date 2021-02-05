@@ -17,7 +17,7 @@ export default class GetInvolved extends Component {
                         <ContactUs />
                     </Col>
                 </Row>
-                <Row>
+                <Row className="center">
                     <Col>
                         <div className="center-text s-margin-b display-block">
                             <h3>Get our newsletter for updates</h3>

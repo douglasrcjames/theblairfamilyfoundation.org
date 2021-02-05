@@ -108,10 +108,6 @@ export default class AboutUs extends Component {
                 </Grid> */}
                 <br/>
                 <br/>
-                <div className="center-text">
-                    <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
-                    <p>We are proud to partner with so many dedicated organizations!</p>
-                </div>
                 <Partners />
                 <GetInvolved />
             </div>
