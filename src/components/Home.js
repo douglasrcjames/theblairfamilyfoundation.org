@@ -168,6 +168,10 @@ export default class Home extends Component {
             </Grid> */}
             
             <div className="full-width bg-light-grey">
+                <div className="center-text">
+                    <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
+                    <p>We are proud to partner with so many dedicated organizations!</p>
+                </div>
                 <Partners />
                 <GetInvolved />
             </div>

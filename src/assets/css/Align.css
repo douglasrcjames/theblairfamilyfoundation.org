@@ -447,6 +447,7 @@ body {
 
 .slick-track {
     padding: 0 20px 0 20px;
+    will-change: transform;
 }
 
 /* the slides */
