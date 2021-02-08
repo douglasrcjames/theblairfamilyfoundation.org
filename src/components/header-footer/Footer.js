@@ -30,10 +30,10 @@ export default class Footer extends Component {
                                 The Blair Family Foundation
                             </div>
                             <div>
-                                <a href="https://www.facebook.com/BlairFamilyFoundation/" target="_blank" rel="noopener noreferrer" className="f-icon">
+                                {/* <a href="https://www.facebook.com/BlairFamilyFoundation/" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-facebook"/>
                                 </a>
-                                &nbsp;&nbsp;
+                                &nbsp;&nbsp; */}
                                 <a href="https://www.instagram.com/blairfamilyfdn/" target="_blank" rel="noopener noreferrer" className="f-icon">
                                     <i className="fab fa-instagram"/>
                                 </a>
