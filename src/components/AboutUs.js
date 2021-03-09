@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Grid, Row } from 'react-flexbox-grid';
+// import { Col, Grid, Row } from 'react-flexbox-grid';
 import GetInvolved from './misc/GetInvolved';
 import Partners from './Partners';
   
@@ -41,33 +41,6 @@ export default class AboutUs extends Component {
                         </div>
                     </div>
                 </div>
-
-                {/* <img
-                            className="responsive overlap-logo"
-                            alt="creek"
-                            src={require("../assets/images/logo/b-w-border-black.png")} />
-                        <br/>
-                        <div className="overlap-content">
-                            <h1 className="overlap-h1">About the Blair Family</h1>
-                            <div className="overlap-p center">
-                                <p>
-                                    The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. From literacy and equity in 
-                                    education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the 
-                                    world, when they are given access to opportunity. 
-                                </p>
-
-                                <p>
-                                    The David and Mikel Blair Family Foundation was founded in 2008 and is funded by the generosity of David and Mikel Blair. 
-                                    The family foundation is based in Montgomery County, MD and their philanthropic efforts touch communities on a national scale.
-                                </p>
-
-                                <p>
-                                    David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time 
-                                    and resources to economic development, educational opportunities, arts programs and health-based initiatives. 
-                                </p>
-                            </div>
-                            
-                        </div> */}
                 {/* <Grid fluid className="full-width bg-light-grey">
                     <Row center="xs">
                         <Col>

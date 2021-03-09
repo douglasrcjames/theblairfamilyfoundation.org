@@ -34,7 +34,7 @@ export default class Menu extends Component {
             zIndex: 3,
           },
           menuList: {
-            paddingTop: '4rem',
+            paddingTop: '5rem',
           }
         }
         return(

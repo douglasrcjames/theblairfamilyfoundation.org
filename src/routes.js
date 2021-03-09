@@ -4,9 +4,9 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Home from './components/Home'
 import Press from './components/Press.js'
 import withTracker from './components/misc/WithTracker';
-import Education from "./components/focus/Education";
-import Environment from "./components/focus/Environment";
-import Equality from "./components/focus/Equality";
+// import Education from "./components/focus/Education";
+// import Environment from "./components/focus/Environment";
+// import Equality from "./components/focus/Equality";
 import Focus from "./components/focus/Focus";
 import AboutUs from "./components/AboutUs";
 
@@ -28,9 +28,9 @@ export class Routes extends React.PureComponent {
         <Route exact path="/press" component={withTracker(Press)} />
         <Route exact path="/about-us" component={withTracker(AboutUs)} />
         <Route exact path="/our-focus/" component={withTracker(Focus)} />
-        <Route exact path="/our-focus/education" component={withTracker(Education)} />
+        {/* <Route exact path="/our-focus/education" component={withTracker(Education)} />
         <Route exact path="/our-focus/equality" component={withTracker(Equality)} />
-        <Route exact path="/our-focus/environment" component={withTracker(Environment)} />
+        <Route exact path="/our-focus/environment" component={withTracker(Environment)} /> */}
         <Route component={withTracker(Page404)} />
       </Switch>
     );

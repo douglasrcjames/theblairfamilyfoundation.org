@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import ContactUs from './ContactUs.js';
-import SubscribeForm from './SubscribeForm.js';
 
 export default class GetInvolved extends Component {
     render() {
@@ -17,7 +16,7 @@ export default class GetInvolved extends Component {
                         <ContactUs />
                     </Col>
                 </Row>
-                <Row className="center">
+                {/* <Row className="center">
                     <Col>
                         <div className="center-text s-margin-b display-block">
                             <h3>Get our newsletter for updates</h3>
@@ -26,7 +25,7 @@ export default class GetInvolved extends Component {
                             <SubscribeForm />
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
             </Grid>
         )
     }

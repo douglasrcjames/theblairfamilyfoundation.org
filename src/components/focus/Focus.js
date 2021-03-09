@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Link } from 'react-router-dom';
 import GetInvolved from '../misc/GetInvolved';
 
 export default class Focus extends Component {
@@ -33,13 +32,9 @@ export default class Focus extends Component {
                     <Row className="l-container" middle="xs">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Education.</h1>
-                            {/* <p>More details coming soon!</p> */}
-                            {/* <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
-                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
-                                when they are given access to opportunity.
+                            <p className="s-margin">
+                                We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.
                             </p>
-                            <Link to="/our-focus/education"><button className="button-grey" type="button">Learn more</button></Link> */}
                         </Col>
                         <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                             <img src={require("../../assets/images/misc/class.jpg")} className="responsive xxlarge" alt="family" />
@@ -53,13 +48,9 @@ export default class Focus extends Component {
                         </Col>
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Equality.</h1>
-                            {/* <p>More details coming soon!</p> */}
-                            {/* <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
-                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
-                                when they are given access to opportunity.
+                            <p className="s-margin">
+                                The foundation is focused on bringing balance for under served minority groups in the county.
                             </p>
-                            <Link to="/our-focus/equality"><button className="button-grey" type="button">Learn more</button></Link>*/}
                         </Col> 
                     </Row>
                 </Grid>
@@ -67,13 +58,9 @@ export default class Focus extends Component {
                     <Row className="l-container" middle="xs">
                         <Col xs={12} lg={6} className="s-margin-t-b">
                             <h1>Environment.</h1>
-                            {/* <p>More details coming soon!</p> */}
-                            {/* <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
-                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
-                                when they are given access to opportunity.
+                            <p className="s-margin">
+                                We are working with the community and policy makers to leave a healthy earth for future generations.
                             </p>
-                            <Link to="/our-focus/environment"><button className="button-grey" type="button">Learn more</button></Link> */}
                         </Col>
                         <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
                             <img src={require("../../assets/images/misc/sunflowers.jpg")} className="responsive xxlarge" alt="family" />

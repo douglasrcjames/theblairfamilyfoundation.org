@@ -89,7 +89,7 @@ PinyonScript (Logo Script)
 
 /* HTML Elements */
 h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-family: "CormorantGaramond-Medium";
     text-transform: uppercase;
     font-weight: 100;
@@ -97,7 +97,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-family: "CormorantGaramond-Medium";
     text-transform: uppercase;
     font-weight: 100;
@@ -105,7 +105,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 0px !important;
     margin: 0px !important;
     font-family: "CormorantGaramond-Medium";
@@ -117,13 +117,13 @@ h3 {
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
     h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
     h3 {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 }
 
@@ -142,7 +142,7 @@ h5 {
 p {
     font-family: "FuturaBook" !important;
     line-height: 2;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -156,7 +156,7 @@ ol,
 li {
     font-family: "FuturaBook";
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 div {
