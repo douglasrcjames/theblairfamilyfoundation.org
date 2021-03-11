@@ -30,7 +30,7 @@ export default class Header extends Component {
         const menuItems = menuArray.map((val,index)=>{
             if(val === "Contact Us"){
                 return (
-                    <Link to={`/about-us#${val.split(" ").join("-").toLowerCase()}`} key={index}>
+                    <Link to={`/about-us#Contact Us`} key={index}>
                         <MenuItem 
                             delay={`${index * 0.1}s`}
                             onClick={()=>{this.handleLinkClick();}}>
@@ -61,7 +61,7 @@ export default class Header extends Component {
                                 <img
                                     className="responsive logo"
                                     alt="family"
-                                    src={require("../../assets/images/logo/v2.png")} />
+                                    src={require("../../assets/images/logo/v3-long.png")} />
                             </Link>
                         </div>
                     
@@ -71,7 +71,7 @@ export default class Header extends Component {
                                     return (
                                         <li key={index}>
                                             <span>
-                                                <Link to={`/about-us#${val}`}>
+                                                <Link to={`/about-us#Contact Us`}>
                                                     {val}
                                                 </Link>
                                             </span>

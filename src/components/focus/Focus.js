@@ -19,11 +19,11 @@ export default class Focus extends Component {
                                 src={require("../../assets/images/logo/b-w-border-black.png")} />
                         </div>
                         <br/>
-                        <h1 className="overlap-h1">Committed to Montgomery County</h1>
+                        <h1 className="overlap-h1">Committed to Quality of Life</h1>
                         <div className="overlap-p center">
                             <p>
-                                Montgomery County is at the center of everything we do. As an operating foundation, we focus on Education, Equality, and the Environment. 
-                                These three cores are our compass and guide all initiatives, whether practice-, policy-, or research-oriented. 
+                                Improving lives is at the center of everything we do. As an operating foundation, we focus on Education, Equality, and the Environment. 
+                                These three core areas are our compass and guide all initiatives, whether practice, policy, or research-oriented.
                             </p>
                         </div>
                     </div>
@@ -60,6 +60,32 @@ export default class Focus extends Component {
                             <h1>Environment.</h1>
                             <p className="s-margin">
                                 We are working with the community and policy makers to leave a healthy earth for future generations.
+                            </p>
+                        </Col>
+                        <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
+                            <img src={require("../../assets/images/misc/sunflowers.jpg")} className="responsive xxlarge" alt="family" />
+                        </Col>
+                    </Row>
+                </Grid>
+                <Grid fluid>
+                    <Row className="l-container" middle="xs">
+                        <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
+                            <img src={require("../../assets/images/misc/kid.jpg")} className="responsive xxlarge" alt="landscape"/>
+                        </Col>
+                        <Col xs={12} lg={6} className="s-margin-t-b">
+                            <h1>Economic Development.</h1>
+                            <p className="s-margin">
+                                Economic development is a key focus to enable people to access jobs and contribute to their family and community. 
+                            </p>
+                        </Col> 
+                    </Row>
+                </Grid>
+                <Grid fluid className="full-width bg-light-grey">
+                    <Row className="l-container" middle="xs">
+                        <Col xs={12} lg={6} className="s-margin-t-b">
+                            <h1>Health Care.</h1>
+                            <p className="s-margin">
+                                Improving healthcare for all is critically important to create a thriving community. 
                             </p>
                         </Col>
                         <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">

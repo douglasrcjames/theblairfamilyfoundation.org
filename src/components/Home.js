@@ -36,9 +36,9 @@ export default class Home extends Component {
                         src={require("../assets/images/logo/b-w-border.png")} />
                     <br/>
                     <div className="bg-text-box">
-                        <h1 className="bg-h1">Committed to Montgomery County</h1>
+                        <h1 className="bg-h1">Improving Lives Across the Region</h1>
                         <div className="bg-p center">
-                            Working with partners and communities across the county to address long-term quality of life challenges and opportunities.
+                            Working with partners and communities to address long-term quality of life challenges and opportunities.
                         </div>
                         
                     </div>
@@ -51,9 +51,9 @@ export default class Home extends Component {
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
                         <p>
-                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. 
-                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the world, 
-                            when they are given access to opportunity.
+                        The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals. 
+                        From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, 
+                        and their impact on the world, when they are given access to opportunity.
                         </p>
                         <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
@@ -70,7 +70,7 @@ export default class Home extends Component {
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Focus.</h1>
                         <p>
-                            We use creative philanthropy to maximize our impact on the core quality of life challenges facing Montgomery County. 
+                            We use creative philanthropy to maximize our impact on the core quality of life challenges facing our region. 
                         </p>
                         <Link to="/our-focus/"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>

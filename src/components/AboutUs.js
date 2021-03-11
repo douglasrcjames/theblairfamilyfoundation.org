@@ -21,12 +21,12 @@ export default class AboutUs extends Component {
                                 src={require("../assets/images/logo/b-w-border-black.png")} />
                         </div>
                         <br/>
-                        <h1 className="overlap-h1">About the Blair Family</h1>
+                        <h1 className="overlap-h1">About the David and Mikel Blair Family Foundation</h1>
                         <div className="overlap-p center">
                             <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals around Maryland. From literacy and equity in 
-                                education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and their impact on the 
-                                world, when they are given access to opportunity. 
+                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals in the region, 
+                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and 
+                                their impact on the world, when they are given access to opportunity.
                             </p>
 
                             <p>
@@ -35,8 +35,8 @@ export default class AboutUs extends Component {
                             </p>
 
                             <p>
-                                David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time 
-                                and resources to economic development, educational opportunities, arts programs and health-based initiatives. 
+                                David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time and 
+                                resources to economic development, educational opportunities, arts programs and health-based initiatives.
                             </p>
                         </div>
                     </div>

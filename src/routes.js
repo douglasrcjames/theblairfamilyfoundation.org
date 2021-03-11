@@ -2,11 +2,7 @@ import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 
 import Home from './components/Home'
-import Press from './components/Press.js'
 import withTracker from './components/misc/WithTracker';
-// import Education from "./components/focus/Education";
-// import Environment from "./components/focus/Environment";
-// import Equality from "./components/focus/Equality";
 import Focus from "./components/focus/Focus";
 import AboutUs from "./components/AboutUs";
 
@@ -25,7 +21,6 @@ export class Routes extends React.PureComponent {
     return (
       <Switch>
         <Route exact path="/" component={withTracker(Home)} />
-        <Route exact path="/press" component={withTracker(Press)} />
         <Route exact path="/about-us" component={withTracker(AboutUs)} />
         <Route exact path="/our-focus/" component={withTracker(Focus)} />
         {/* <Route exact path="/our-focus/education" component={withTracker(Education)} />
