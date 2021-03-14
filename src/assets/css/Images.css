@@ -34,11 +34,16 @@ img.xlarge {
     max-width: 450px;
 }
 
-
 img.xxlarge {
     width: 100%;
     height: auto;
     max-width: 550px;
+}
+
+img.xxxlarge {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
 
 /* em styling */

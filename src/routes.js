@@ -5,6 +5,7 @@ import Home from './components/Home'
 import withTracker from './components/misc/WithTracker';
 import Focus from "./components/focus/Focus";
 import AboutUs from "./components/AboutUs";
+import Partners from "./components/Partners";
 
 const Page404 = ({ location }) => (
   <div className="wrapper">
@@ -22,6 +23,7 @@ export class Routes extends React.PureComponent {
       <Switch>
         <Route exact path="/" component={withTracker(Home)} />
         <Route exact path="/about-us" component={withTracker(AboutUs)} />
+        <Route exact path="/partners" component={withTracker(Partners)} />
         <Route exact path="/our-focus/" component={withTracker(Focus)} />
         {/* <Route exact path="/our-focus/education" component={withTracker(Education)} />
         <Route exact path="/our-focus/equality" component={withTracker(Equality)} />

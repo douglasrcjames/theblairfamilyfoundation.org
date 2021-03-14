@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
-import Partners from './Partners.js';
+import PartnersSlider from './misc/PartnersSlider.js';
 import GetInvolved from './misc/GetInvolved.js';
 
 export default class Home extends Component {
@@ -58,14 +58,14 @@ export default class Home extends Component {
                         <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/misc/family.jpg")} className="responsive xxlarge green-border" alt="family" />
+                        <img src={require("../assets/images/misc/family.jpg")} className="responsive xxxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
             <Grid fluid>
                 <Row className="l-container">
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/misc/landscape.jpg")} className="responsive xxlarge" alt="landscape"/>
+                        <img src={require("../assets/images/focus/focus-less-cropped.jpeg")} className="responsive xxxlarge green-border" alt="landscape"/>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Focus.</h1>
@@ -171,8 +171,9 @@ export default class Home extends Component {
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
                     <p>We are proud to partner with so many dedicated organizations!</p>
+                    <Link to="/partners" className="grey">View full partner list</Link>
                 </div>
-                <Partners />
+                <PartnersSlider />
                 <GetInvolved />
             </div>
 

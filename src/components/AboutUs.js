@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-// import { Col, Grid, Row } from 'react-flexbox-grid';
+import { Link } from 'react-router-dom';
 import GetInvolved from './misc/GetInvolved';
-import Partners from './Partners';
+import PartnersSlider from './misc/PartnersSlider';
   
 export default class AboutUs extends Component {
     render() {
@@ -84,8 +84,9 @@ export default class AboutUs extends Component {
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
                     <p>We are proud to partner with so many dedicated organizations!</p>
+                    <Link to="/partners" className="grey">View full partner list</Link>
                 </div>
-                <Partners />
+                <PartnersSlider />
                 <GetInvolved />
             </div>
                 

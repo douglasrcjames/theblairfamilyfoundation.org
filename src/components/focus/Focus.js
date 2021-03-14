@@ -9,7 +9,7 @@ export default class Focus extends Component {
                 <img
                     className="focus-hero"
                     alt="family"
-                    src={require("../../assets/images/misc/landscape-cut.jpg")} />
+                    src={require("../../assets/images/focus/focus.jpeg")} />
                 <div className="overlap-2 l-container"> 
                     <div className="overlap-inner">
                         <div className="center-text">
