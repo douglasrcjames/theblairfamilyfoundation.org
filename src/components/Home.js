@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import {Link} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import PartnersSlider from './misc/PartnersSlider.js';
 import GetInvolved from './misc/GetInvolved.js';
 
@@ -65,7 +66,7 @@ export default class Home extends Component {
             <Grid fluid>
                 <Row className="l-container">
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/focus/focus-less-cropped.jpeg")} className="responsive xxxlarge green-border" alt="landscape"/>
+                        <img src={require("../assets/images/focus/focus-thumb.png")} className="responsive xxxlarge green-border" alt="landscape"/>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Focus.</h1>
@@ -79,38 +80,72 @@ export default class Home extends Component {
             <Grid fluid className="no-padding">
                 <Row>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
-                        <img src={require("../assets/images/focus/education.jpg")} className="responsive" alt="focus 1"/>
+                        <img src={require("../assets/images/focus/economic-development.png")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Economic Development</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2 className="long">Economic Development</h2>
+                            <p>Economic development is a key focus to enable people to access jobs and contribute to their family and community.</p>
+                            <HashLink to="/our-focus#Economic Development"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                        </div>
+                    </Col>
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
+                        <img src={require("../assets/images/focus/education.png")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Education</h4>
                         </div>
                         <div className="hover-text">
                             <h2>Education</h2>
                             <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
-                            <Link to="/our-focus"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <HashLink to="/our-focus#Education"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
-                        <img src={require("../assets/images/focus/equal.jpg")} className="responsive" alt="focus 1"/>
+                        <img src={require("../assets/images/focus/equality.png")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Equality</h4>
                         </div>
                         <div className="hover-text">
                             <h2>Equality</h2>
                             <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
-                            <Link to="/our-focus"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <HashLink to="/our-focus#Equality"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
-                        <img src={require("../assets/images/focus/environment-1.jpg")} className="responsive" alt="focus 1"/>
+                        <img src={require("../assets/images/focus/environment.png")} className="responsive" alt="focus 1"/>
                         <div className="text">
                             <h4>Environment</h4>
                         </div>
                         <div className="hover-text">
                             <h2>Environment</h2>
                             <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
-                            <Link to="/our-focus"><button className="button-plain-white btn-1" type="button">Learn more</button></Link>
+                            <HashLink to="/our-focus#Environment"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
                         </div>
                     </Col>
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
+                        <img src={require("../assets/images/focus/food-security.png")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Food Security</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2>Food Security</h2>
+                            <p className="display-block">Food Security is maintaining a readily available, healthy and affordable food supply for all.</p>
+                            <HashLink to="/our-focus#Food Security"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                        </div>
+                    </Col>
+                    <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
+                        <img src={require("../assets/images/focus/healthcare.png")} className="responsive" alt="focus 1"/>
+                        <div className="text">
+                            <h4>Health Care</h4>
+                        </div>
+                        <div className="hover-text">
+                            <h2>Health Care</h2>
+                            <p>Improving healthcare for all is critically important to create a thriving community.</p>
+                            <HashLink to="/our-focus#Health Care"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                        </div>
+                    </Col>
+                    
                 </Row>
             </Grid>
 
@@ -170,7 +205,7 @@ export default class Home extends Component {
             <div className="full-width bg-light-grey">
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
-                    <p>We are proud to partner with so many dedicated organizations!</p>
+                    <p className="s-margin-t">We are proud to partner with so many dedicated organizations!</p>
                     <Link to="/partners" className="grey">View full partner list</Link>
                 </div>
                 <PartnersSlider />

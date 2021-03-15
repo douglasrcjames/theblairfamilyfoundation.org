@@ -83,7 +83,7 @@ export default class AboutUs extends Component {
                 <br/>
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
-                    <p>We are proud to partner with so many dedicated organizations!</p>
+                    <p className="s-margin-t">We are proud to partner with so many dedicated organizations!</p>
                     <Link to="/partners" className="grey">View full partner list</Link>
                 </div>
                 <PartnersSlider />
