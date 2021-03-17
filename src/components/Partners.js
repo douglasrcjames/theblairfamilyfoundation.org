@@ -8,7 +8,7 @@ export default class Partners extends Component {
         return (
             <div className="wrapper">
                 <br/><br/><br/><br/>
-                <h1>All Foundation Partners</h1>
+                <h1>Our Partners</h1>
                 <Grid fluid>
                     <Row center="xs" middle="xs">
                         {shuffle(partners).map((partner, i) => {
@@ -28,6 +28,9 @@ export default class Partners extends Component {
                                 </Col>
                             )
                         })}
+                    </Row>
+                    <Row center="xs">
+                        <b className="xl-text">...and many more!</b>
                     </Row>
                 </Grid>
                 <br/><br/><br/><br/>

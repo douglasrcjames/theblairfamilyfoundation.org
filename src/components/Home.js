@@ -52,14 +52,14 @@ export default class Home extends Component {
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
                         <p>
-                        The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals. 
-                        From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, 
-                        and their impact on the world, when they are given access to opportunity.
+                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals. 
+                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, 
+                            and their impact on the world, when they are given access to opportunity.
                         </p>
                         <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/misc/family.jpg")} className="responsive xxxlarge green-border" alt="family" />
+                        <img src={require("../assets/images/misc/family-side-crop.jpg")} className="responsive xxxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
@@ -80,14 +80,14 @@ export default class Home extends Component {
             <Grid fluid className="no-padding">
                 <Row>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
-                        <img src={require("../assets/images/focus/economic-development.png")} className="responsive" alt="focus 1"/>
+                        <img src={require("../assets/images/focus/equality.png")} className="responsive" alt="focus 1"/>
                         <div className="text">
-                            <h4>Economic Development</h4>
+                            <h4>Equity</h4>
                         </div>
                         <div className="hover-text">
-                            <h2 className="long">Economic Development</h2>
-                            <p>Economic development is a key focus to enable people to access jobs and contribute to their family and community.</p>
-                            <HashLink to="/our-focus#Economic Development"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            <h2>Equity</h2>
+                            <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
+                            <HashLink to="/our-focus#Equity"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -102,14 +102,14 @@ export default class Home extends Component {
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
-                        <img src={require("../assets/images/focus/equality.png")} className="responsive" alt="focus 1"/>
+                        <img src={require("../assets/images/focus/economic-development.png")} className="responsive" alt="focus 1"/>
                         <div className="text">
-                            <h4>Equality</h4>
+                            <h4>Economic Development</h4>
                         </div>
                         <div className="hover-text">
-                            <h2>Equality</h2>
-                            <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
-                            <HashLink to="/our-focus#Equality"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            <h2 className="long">Economic Development</h2>
+                            <p>Economic development is a key focus to enable people to access jobs and contribute to their family and community.</p>
+                            <HashLink to="/our-focus#Economic Development"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
