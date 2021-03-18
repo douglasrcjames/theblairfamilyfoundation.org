@@ -59,7 +59,7 @@ export default class Home extends Component {
                         <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
                     <Col xs={12} lg={6} className="s-margin-t-b box-text-v-align">
-                        <img src={require("../assets/images/misc/family-side-crop.jpg")} className="responsive xxxlarge green-border" alt="family" />
+                        <img src={require("../assets/images/misc/family.jpg")} className="responsive xxxlarge green-border" alt="family" />
                     </Col>
                 </Row>
             </Grid>
@@ -206,7 +206,7 @@ export default class Home extends Component {
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
                     <p className="s-margin-t">We are proud to partner with so many dedicated organizations!</p>
-                    <Link to="/partners" className="grey">View full partner list</Link>
+                    <Link to="/our-partners" className="grey">View full partner list</Link>
                 </div>
                 <PartnersSlider />
                 <GetInvolved />

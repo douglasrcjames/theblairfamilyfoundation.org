@@ -24,7 +24,7 @@ export default class AboutUs extends Component {
                         <h1 className="overlap-h1">About the David and Mikel Blair Family Foundation</h1>
                         <div className="overlap-p center">
                             <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals in the region, 
+                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals in the region. 
                                 From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and 
                                 their impact on the world, when they are given access to opportunity.
                             </p>
@@ -84,7 +84,7 @@ export default class AboutUs extends Component {
                 <div className="center-text">
                     <h1 className="no-margin"><a id="Partners" className="anchor" href="/#">Partners</a>Our Partners.</h1>
                     <p className="s-margin-t">We are proud to partner with so many dedicated organizations!</p>
-                    <Link to="/partners" className="grey">View full partner list</Link>
+                    <Link to="/our-partners" className="grey">View full partner list</Link>
                 </div>
                 <PartnersSlider />
                 <GetInvolved />

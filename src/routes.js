@@ -23,7 +23,7 @@ export class Routes extends React.PureComponent {
       <Switch>
         <Route exact path="/" component={withTracker(Home)} />
         <Route exact path="/about-us" component={withTracker(AboutUs)} />
-        <Route exact path="/partners" component={withTracker(Partners)} />
+        <Route exact path="/our-partners" component={withTracker(Partners)} />
         <Route exact path="/our-focus/" component={withTracker(Focus)} />
         {/* <Route exact path="/our-focus/education" component={withTracker(Education)} />
         <Route exact path="/our-focus/equality" component={withTracker(Equality)} />
