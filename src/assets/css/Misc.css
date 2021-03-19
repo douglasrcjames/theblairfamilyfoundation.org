@@ -374,7 +374,7 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-width: 0 1px;
     border-bottom: 0;
     display: inline-block;
@@ -407,7 +407,7 @@
   .focus-container .hover-text h2.long {
     font-size: 20px !important;
   }
-  .focus-container .hover-text h2:before,
+  /* .focus-container .hover-text h2:before,
   .focus-container .hover-text h2:after {
     content: "";
     vertical-align: top;
@@ -416,7 +416,7 @@
     height: 0.65em;
     border-bottom: 1px solid #fff;
     margin: 0 2% 0 -55%;
-  }
+  } */
   .focus-container .hover-text h2:after {
     margin: 0 -55% 0 2%;
   }
@@ -427,7 +427,7 @@
     padding: 25px 25px 15px 25px;
 }
 
-.focus-container .hover-text:before {
+/* .focus-container .hover-text:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -444,7 +444,7 @@
     right: calc(50% + 150px/2);
     height: 1px;
     background: white;
-}
+} */
 
 .focus-container:hover {
     background-color: black;

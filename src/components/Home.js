@@ -83,8 +83,8 @@ export default class Home extends Component {
                         </div>
                         <div className="hover-text">
                             <h2>Equity</h2>
-                            <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
-                            <HashLink to="/our-focus#Equity"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            {/* <p className="display-block">The foundation is focused on bringing balance for under served minority groups in the county.</p>
+                            <HashLink to="/our-focus#Equity"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -94,8 +94,8 @@ export default class Home extends Component {
                         </div>
                         <div className="hover-text">
                             <h2>Education</h2>
-                            <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
-                            <HashLink to="/our-focus#Education"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            {/* <p>We are committed to providing equal education opportunities for all people regardless of their race, sexuality, or nationality.</p>
+                            <HashLink to="/our-focus#Education"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -104,9 +104,9 @@ export default class Home extends Component {
                             <h4>Economic Development</h4>
                         </div>
                         <div className="hover-text">
-                            <h2 className="long">Economic Development</h2>
-                            <p>Economic development is a key focus to enable people to access jobs and contribute to their family and community.</p>
-                            <HashLink to="/our-focus#Economic Development"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            <h2>Economic Development</h2>
+                            {/* <p>Economic development is a key focus to enable people to access jobs and contribute to their family and community.</p>
+                            <HashLink to="/our-focus#Economic Development"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -116,8 +116,8 @@ export default class Home extends Component {
                         </div>
                         <div className="hover-text">
                             <h2>Environment</h2>
-                            <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
-                            <HashLink to="/our-focus#Environment"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            {/* <p>We are working with the community and policy makers to leave a healthy earth for future generations.</p>
+                            <HashLink to="/our-focus#Environment"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -127,8 +127,8 @@ export default class Home extends Component {
                         </div>
                         <div className="hover-text">
                             <h2>Food Security</h2>
-                            <p className="display-block">Food Security is maintaining a readily available, healthy and affordable food supply for all.</p>
-                            <HashLink to="/our-focus#Food Security"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            {/* <p className="display-block">Food Security is maintaining a readily available, healthy and affordable food supply for all.</p>
+                            <HashLink to="/our-focus#Food Security"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     <Col xs={this.state.width >= 1600 ? 4 : 12} className="focus-container no-padding">
@@ -138,8 +138,8 @@ export default class Home extends Component {
                         </div>
                         <div className="hover-text">
                             <h2>Health Care</h2>
-                            <p>Improving healthcare for all is critically important to create a thriving community.</p>
-                            <HashLink to="/our-focus#Health Care"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink>
+                            {/* <p>Improving healthcare for all is critically important to create a thriving community.</p>
+                            <HashLink to="/our-focus#Health Care"><button className="button-plain-white btn-1" type="button">Learn more</button></HashLink> */}
                         </div>
                     </Col>
                     
