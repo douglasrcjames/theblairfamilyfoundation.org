@@ -22,10 +22,8 @@ export default class Focus extends Component {
                         <h1 className="overlap-h1">Committed to Quality of Life for All</h1>
                         <div className="overlap-p center">
                             <p>
-                                Improving lives in our region is at the center of everything we do. As an
-                                operating foundation, we focus on equity, education, economic development,
-                                the environment, and health care. These core areas are our compass and
-                                guide all initiatives, whether practice, policy, or research oriented.
+                                Improving lives in our region is at the center of everything we do. We focus on equity, education, economic development, the environment, food security, and health care. 
+                                These core areas are our compass and guide all initiatives, whether practice, policy, or research oriented.
                             </p>
                         </div>
                     </div>

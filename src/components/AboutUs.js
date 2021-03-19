@@ -24,19 +24,19 @@ export default class AboutUs extends Component {
                         <h1 className="overlap-h1">About the David and Mikel Blair Family Foundation</h1>
                         <div className="overlap-p center">
                             <p>
-                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals in the region. 
-                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, and 
-                                their impact on the world, when they are given access to opportunity.
+                                The David and Mikel Blair Family Foundation is dedicated to purposeful giving and rooted in improving the quality of life for individuals in the region. 
+                                From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in every individual, and 
+                                their impact on the world when they are given access to opportunity.
                             </p>
 
                             <p>
                                 The David and Mikel Blair Family Foundation was founded in 2008 and is funded by the generosity of David and Mikel Blair. 
-                                The family foundation is based in Montgomery County, MD and their philanthropic efforts touch communities on a national scale.
+                                The family foundation is based in Montgomery County, Maryland and their philanthropic efforts touch communities on a national scale.
                             </p>
 
                             <p>
-                                David and Mikel Blair continue their commitment to a number of civic and charitable organizations by investing both time and 
-                                resources to economic development, educational opportunities, arts programs and health-based initiatives.
+                                David and Mikel Blair invest both their time and resources to a number of civic and charitable organizations focusing on equity, education, 
+                                economic development, environment, food security and healthcare. 
                             </p>
                         </div>
                     </div>

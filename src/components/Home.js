@@ -38,9 +38,6 @@ export default class Home extends Component {
                     <br/>
                     <div className="bg-text-box">
                         <h1 className="bg-h1">Improving Lives Across the Region</h1>
-                        <div className="bg-p center">
-                            Working with partners and communities to address long-term quality of life challenges and opportunities.
-                        </div>
                         
                     </div>
                     
@@ -52,9 +49,9 @@ export default class Home extends Component {
                     <Col xs={12} lg={6} className="s-margin-t-b">
                         <h1>Our Story.</h1>
                         <p>
-                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and is rooted in improving the quality of life for individuals. 
-                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in individuals, 
-                            and their impact on the world, when they are given access to opportunity.
+                            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and rooted in improving the quality of life for individuals. 
+                            From literacy and equity in education, to at-risk youth programs and mental health access, the foundation believes and sees value in every individual, 
+                            and their impact on the world when they are given access to opportunity.
                         </p>
                         <Link to="/about-us"><button className="button-grey" type="button">Learn more</button></Link>
                     </Col>
